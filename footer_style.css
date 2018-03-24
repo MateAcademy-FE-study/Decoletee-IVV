@@ -1,0 +1,33 @@
+.footer_head{
+	text-align: center;
+}
+.form{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  justify-content: center;
+}
+.item_wrapper{
+	width: 500px;
+	text-align: right;
+}
+.footer_textarea{
+	width: 500px;
+	text-align: left;
+	margin-left: 50px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid red;
+    outline-style:none;
+}
+input[type=email] {
+    border: none;
+    border-bottom: 2px solid red;
+    outline-style:none;
+}
+.submit_button {
+width: 100px;
+margin: 0 auto;
+}
