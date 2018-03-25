@@ -117,3 +117,9 @@ textarea::placeholder {
 	text-align:center;
 	margin-top:60px; 
 }
+.underline{
+    background-color: #a70c5d;
+    height: 3px;
+    width: 60px;
+    margin: 0 auto;
+}
