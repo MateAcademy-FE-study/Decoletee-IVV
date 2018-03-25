@@ -1,33 +1,119 @@
+
+@font-face {
+    font-family: Gotham; /* Гарнитура шрифта */
+    src: url(gotham.otf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: GothamRegular; /* Гарнитура шрифта */
+    src: url(gothamregular.ttf); /* Путь к файлу со шрифтом */
+   }
 .footer_head{
 	text-align: center;
+	font-size: 28pt;
+	font-family: Gotham;
+	color: #3f4147;
 }
 .form{
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-  justify-content: center;
+	font-family: GothamRegular;
+	font-weight: 600;
+  	justify-content: center;
+  	margin-top: 70px; 
+
 }
 .item_wrapper{
-	width: 500px;
+	width: 400px;
 	text-align: right;
 }
 .footer_textarea{
-	width: 500px;
+	width: 400px;
 	text-align: left;
 	margin-left: 50px;
+
 }
 
 input[type=text] {
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #dcdcdc;
     outline-style:none;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    font-family: Gotham;
+
+    font-weight: bold;
 }
 input[type=email] {
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #dcdcdc;
     outline-style:none;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    font-family: Gotham;
+    font-weight: bold;
 }
+
+.radio_buttons label:hover{
+ color: #a70c5d;
+ cursor: pointer;
+}
+input[type=radio]:checked + label{
+ color: #a70c5d;
+ cursor: pointer;
+}
+
+
+
 .submit_button {
 width: 100px;
 margin: 0 auto;
+}
+.items_check{
+	width: 400px;
+	text-align: left;
+	border: 2px solid #dcdcdc;
+	margin-top: 50px;
+	
+}
+.interest{
+	border-bottom: 2px solid #dcdcdc;
+	padding: 20px; 
+	margin: 0;
+	background-color: #fcfcfd;
+}
+.radio_buttons{
+	padding: 20px 20px 10px 5px;
+	line-height: 2;
+}
+textarea{
+	width: 400px;
+	height: 230px;
+	border-color: #dcdcdc;
+	padding:10px;
+	font-family: Gotham;
+}
+
+textarea::placeholder {
+  color: #dcdcdc;
+  font-weight: lighter;
+}
+.button {
+    background-color: #a70c5d; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px; 
+    border-radius: 30px;
+    font-family: Gotham;
+    font-size: 11pt;
+}
+.bttn_submit{
+	text-align:center;
+	margin-top:60px; 
 }
