@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 35px 90px 0px 90px;
+    background: #dbdbdb;
+}
+
+.nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu, .lang {
+    padding: 10px 0;
+}
+.menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: rgb(212, 41, 78);
+}
+
+.checkbox {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+
+.checkbox:not(checked) {position: absolute; opacity: 0;}
+.checkbox:not(checked) + label.switch {
+    position: relative;
+    padding: 0 0 0 60px;
+    display: block;
+    height: 30px;
+}
+
+.checkbox:not(checked) + label.switch::before {
+    content: " ";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 26px;
+    border-radius: 13px;
+    border-color: #cdd1da;
+    box-shadow: #cdd1da 0 0 0 0 inset;
+    transition: border 0.4s, box-shadow 0.4s;
+    background-color: #a4a9b4;
+}
+
+.checkbox:not(checked) + label.switch::after {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    transition: all .2s;
+}
+
+.checkbox:checked + label.switch::before {
+    box-shadow: #d6399a 0 0 0 16px inset;
+    transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+    background-color: #d6399a;
+    border-color: #d6399a;
+}
+
+.checkbox:checked + label.switch::after {
+    left: 35px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    width: 40%;
+    float: left;
+    color: #666666;   
+}
+
+.info hr {
+    height: 3px;
+    width: 60px;
+    background: #d6399a;
+    border: none;
+    margin-left: 0;
+}
+
+.info p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+
+.button .btn_price {
+    margin-top: 10%;
+    height: 45px;
+    width: 170px;
+    background-color: #d6399a;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.btn {
+    width: 95px;
+    height: 95px;
+    position: relative;
+}
+
+.btn button {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn img {
+    position: absolute;
+    left: 42%;
+    top: 40%;
+}
+
+
+
+
