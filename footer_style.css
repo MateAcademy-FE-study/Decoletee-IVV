@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: Gotham; /* Гарнитура шрифта */
-    src: url(gotham.otf); /* Путь к файлу со шрифтом */
+    src: url(fonts/gotham.otf); /* Путь к файлу со шрифтом */
    }
    @font-face {
     font-family: GothamRegular; /* Гарнитура шрифта */
-    src: url(gothamregular.ttf); /* Путь к файлу со шрифтом */
+    src: url(fonts/gothamregular.ttf); /* Путь к файлу со шрифтом */
    }
 .footer_head{
 	text-align: center;
