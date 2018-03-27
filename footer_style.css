@@ -69,12 +69,6 @@ input[type=radio]:checked + label{
  cursor: pointer;
 }
 
-
-
-.submit_button {
-width: 100px;
-margin: 0 auto;
-}
 .items_check{
 	width: 400px;
 	text-align: left;
@@ -118,7 +112,7 @@ textarea::placeholder {
     font-family: Gotham;
     font-size: 11pt;
 }
-.bttn_submit{
+.bttn_submit_center{
 	text-align:center;
 	margin-top:60px;
     margin-bottom: 60px; 
