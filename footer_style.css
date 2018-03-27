@@ -38,18 +38,7 @@
 
 }
 
-input[type=text] {
-    border: none;
-    border-bottom: 2px solid #dcdcdc;
-    outline-style:none;
-    width: 100%;
-    height: 35px;
-    padding: 5px;
-    font-family: Gotham;
-
-    font-weight: bold;
-}
-input[type=email] {
+input {
     border: none;
     border-bottom: 2px solid #dcdcdc;
     outline-style:none;
@@ -58,42 +47,43 @@ input[type=email] {
     padding: 5px;
     font-family: Gotham;
     font-weight: bold;
+    -webkit-transition: border-bottom 3s, ; /* For Safari 3.1 to 6.0 */
+    transition: border-bottom 3s;
+}
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #a70c5d;
+    
 }
 
-.radio_buttons label:hover{
- color: #a70c5d;
- cursor: pointer;
-}
-input[type=radio]:checked + label{
- color: #a70c5d;
- cursor: pointer;
-}
 
 .items_check{
 	width: 400px;
 	text-align: left;
 	border: 2px solid #dcdcdc;
 	margin-top: 50px;
-	
+    height: 63px;
+    background-color: #fcfcfd;
+    padding: 0 10px;
+    font-family: GothamRegular
 }
-.interest{
-	border-bottom: 2px solid #dcdcdc;
-	padding: 20px; 
-	margin: 0;
-	background-color: #fcfcfd;
-}
-.radio_buttons{
-	padding: 20px 20px 10px 5px;
-	line-height: 2;
-}
+
 textarea{
 	width: 400px;
 	height: 230px;
 	border-color: #dcdcdc;
 	padding:10px;
-	font-family: GothamRegular;
+	font-family: Gotham;
+    font-weight: bold;
+    -webkit-transition: border 3s, ; /* For Safari 3.1 to 6.0 */
+    transition: border 3s;
 }
 
+textarea:focus {
+    outline: none;
+    border:1px solid #a70c5d;
+   
+}
 textarea::placeholder {
   color: #dcdcdc;
   font-weight: lighter;
@@ -156,7 +146,6 @@ margin-right: auto;
   border-radius: 50%;
   border: 2px solid #D8E2DC;
   float: left;
-  
 }
 
 .wrapper ul li .fa {
@@ -165,40 +154,52 @@ margin-right: auto;
 }
 
 .wrapper ul li:hover.facebook {
-  border: 5px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
+  border: 2px solid #3b5998;
+ 
 
 }
 
 .wrapper ul li:hover .fa-facebook {
   color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
-  
 }
 
 .wrapper ul li:hover.twitter {
-  border: 5px solid #00aced;
-  box-shadow: 0 0 15px #00aced;
-  
+  border: 2px solid #00aced;
 }
 
 .wrapper ul li:hover .fa-twitter {
   color: #00aced;
-  text-shadow: 0 0 15px #00aced;
-  
 }
 
 .wrapper ul li:hover.google {
-  border: 5px solid #dd4b39;
-  box-shadow: 0 0 15px #dd4b39;
-  
+  border: 2px solid #dd4b39;
 }
 
 .wrapper ul li:hover .fa-linkedin {
   color: #dd4b39;
-  text-shadow: 0 0 15px #dd4b39;
-  
 }
 .bottom_intro{
   margin-top:80px; 
+}
+
+label {position:relative;}
+label:after {
+    content: url(arrow.png);
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    right:10px; top:0;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    
+    pointer-events:none;
+}
+label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
 }
