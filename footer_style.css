@@ -64,7 +64,7 @@ input:focus {
 	margin-top: 50px;
     height: 63px;
     background-color: #fcfcfd;
-    padding: 0 10px;
+    
     font-family: GothamRegular
 }
 
@@ -202,4 +202,50 @@ label:before {
     position:absolute;
     pointer-events:none;
     display:block;
+}
+
+
+.list ul { 
+    font-family: GothamRegular;
+    border:  2px #dcdcdc solid;
+    margin-top: 50px; 
+    width: 370px;
+
+}
+.list ul li:first-child{
+    list-style: none;
+    background-image: url('arrow.png');
+    background-repeat:no-repeat;
+    background-position:95%;
+    border-bottom: 2px solid #dcdcdc;
+    border-left: 2px solid #dcdcdc;
+    margin-left: -42px;
+    padding-left: 20px; 
+    background-color: #fcfcfd;
+    height: 50px;
+    line-height: 3; 
+    
+}
+.list ul li {
+   
+    text-align: left;
+    padding: 5px 10px; 
+    z-index: 2; 
+}
+.list ul li:not(.init) { 
+    display: none;
+    padding-top: 15px 
+}
+.list ul li:not(.init):hover, ul li.selected:not(.init) {
+    cursor: pointer; 
+    color: #a70c5d;
+
+}
+.list li.init { 
+    cursor: pointer; 
+
+}
+
+.list-unstyled{
+    
 }
