@@ -213,6 +213,8 @@ label:before {
 
 }
 .list ul li:first-child{
+    position: relative;
+    top: 2px;
     list-style: none;
     background-image: url('arrow.png');
     background-repeat:no-repeat;
