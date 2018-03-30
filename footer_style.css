@@ -18,24 +18,90 @@
 	font-family: Gotham;
 	color: #3f4147;
 }
-.form{
+.underline{
+    background-color: #a70c5d;
+    height: 3px;
+    width: 60px;
+    margin: 0 auto;
+}
+.input-form{
 	display: flex;
 	flex-direction: row;
 	font-family: GothamRegular;
 	font-weight: 600;
   	justify-content: center;
   	margin-top: 70px; 
-
 }
-.item_wrapper{
+.input-form__items{
 	width: 400px;
 	text-align: right;
 }
-.footer_textarea{
+label {position:relative;}
+label:after {
+    content: url(arrow.png);
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    right:10px; top:0;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+
+.input-form__list ul { 
+    font-family: GothamRegular;
+    border:  2px #dcdcdc solid;
+    margin-top: 50px; 
+    width: 370px;
+}
+.input-form__list ul li:first-child{
+    position: relative;
+    top: 2px;
+    list-style: none;
+    background-image: url('arrow.png');
+    background-repeat:no-repeat;
+    background-position:95%;
+    border-bottom: 2px solid #dcdcdc;
+    border-left: 2px solid #dcdcdc;
+    margin-left: -42px;
+    padding-left: 20px; 
+    background-color: #fcfcfd;
+    height: 50px;
+    line-height: 3; 
+}
+
+.input-form__list ul li {
+    text-align: left;
+    padding: 5px 10px; 
+    z-index: 2; 
+}
+.input-form__list ul li:not(.init) { 
+    display: none;
+    padding-top: 15px 
+}
+.input-form__list ul li:not(.init):hover, ul li.selected:not(.init) {
+    cursor: pointer; 
+    color: #a70c5d;
+
+}
+.input-form__list li.init { 
+    cursor: pointer; 
+
+}
+.input-form__textarea{
 	width: 400px;
 	text-align: left;
 	margin-left: 50px;
-
 }
 
 input {
@@ -55,19 +121,6 @@ input:focus {
     border-bottom: 2px solid #a70c5d;
     
 }
-
-
-.items_check{
-	width: 400px;
-	text-align: left;
-	border: 2px solid #dcdcdc;
-	margin-top: 50px;
-    height: 63px;
-    background-color: #fcfcfd;
-    
-    font-family: GothamRegular
-}
-
 textarea{
 	width: 400px;
 	height: 230px;
@@ -102,42 +155,35 @@ textarea::placeholder {
     font-family: Gotham;
     font-size: 11pt;
 }
-.bttn_submit_center{
+.input-form__button{
 	text-align:center;
 	margin-top:60px;
     margin-bottom: 60px; 
 }
-.underline{
-    background-color: #a70c5d;
-    height: 3px;
-    width: 60px;
-    margin: 0 auto;
-}
+
 .footer_delimiter{
     height: 2px;
     background-color: #dcdcdc;
 }
-.footer_footer{
+.footer_about{
     text-align: center;
     font-family: GothamLight;
 }
 
-.footer_footer a{
+.footer_about a{
     color: #a70c5d;
 }
-.wrapper {
-width: 230px;
-margin-top: 15px;
-margin-bottom: 15px;
-margin-left: auto;
-margin-right: auto;    
+.footer_about__social {
+width: 193px;
+margin: 15px auto;
+  
 }
 
-.wrapper ul {
+.footer_about__social {
   list-style: none;
 }
 
- .wrapper ul li {
+ .footer_about__social li {
   width: 35px;
   height: 35px;
   margin: 0 5px;
@@ -148,106 +194,35 @@ margin-right: auto;
   float: left;
 }
 
-.wrapper ul li .fa {
+.footer_about__social li .fa {
   color: #D8E2DC;
   margin-top: 10px;
 }
 
-.wrapper ul li:hover.facebook {
+.footer_about__social li:hover.facebook {
   border: 2px solid #3b5998;
- 
-
 }
 
-.wrapper ul li:hover .fa-facebook {
+.footer_about__social li:hover .fa-facebook {
   color: #3b5998;
 }
 
-.wrapper ul li:hover.twitter {
+.footer_about__social li:hover.twitter {
   border: 2px solid #00aced;
 }
 
-.wrapper ul li:hover .fa-twitter {
+.footer_about__social li:hover .fa-twitter {
   color: #00aced;
 }
 
-.wrapper ul li:hover.google {
+.footer_about__social li:hover.google {
   border: 2px solid #dd4b39;
 }
 
-.wrapper ul li:hover .fa-linkedin {
+.footer_about__social li:hover .fa-linkedin {
   color: #dd4b39;
 }
-.bottom_intro{
+.footer_about__intro{
   margin-top:80px; 
 }
 
-label {position:relative;}
-label:after {
-    content: url(arrow.png);
-    font:11px "Consolas", monospace;
-    color:#aaa;
-    right:10px; top:0;
-    padding:0 0 2px;
-    border-bottom:1px solid #ddd;
-    position:absolute;
-    
-    pointer-events:none;
-}
-label:before {
-    content:'';
-    right:6px; top:0px;
-    width:20px; height:20px;
-    background:#f8f8f8;
-    position:absolute;
-    pointer-events:none;
-    display:block;
-}
-
-
-.list ul { 
-    font-family: GothamRegular;
-    border:  2px #dcdcdc solid;
-    margin-top: 50px; 
-    width: 370px;
-
-}
-.list ul li:first-child{
-    position: relative;
-    top: 2px;
-    list-style: none;
-    background-image: url('arrow.png');
-    background-repeat:no-repeat;
-    background-position:95%;
-    border-bottom: 2px solid #dcdcdc;
-    border-left: 2px solid #dcdcdc;
-    margin-left: -42px;
-    padding-left: 20px; 
-    background-color: #fcfcfd;
-    height: 50px;
-    line-height: 3; 
-    
-}
-.list ul li {
-   
-    text-align: left;
-    padding: 5px 10px; 
-    z-index: 2; 
-}
-.list ul li:not(.init) { 
-    display: none;
-    padding-top: 15px 
-}
-.list ul li:not(.init):hover, ul li.selected:not(.init) {
-    cursor: pointer; 
-    color: #a70c5d;
-
-}
-.list li.init { 
-    cursor: pointer; 
-
-}
-
-.list-unstyled{
-    
-}
