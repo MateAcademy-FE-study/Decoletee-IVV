@@ -1,14 +1,14 @@
 @font-face {
     font-family: Gotham; /* Гарнитура шрифта */
-    src: url(fonts/gotham.otf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/gotham.otf); /* Путь к файлу со шрифтом */
    }
    @font-face {
     font-family: GothamRegular; /* Гарнитура шрифта */
-    src: url(fonts/gothamregular.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/gothamregular.ttf); /* Путь к файлу со шрифтом */
    }
    @font-face {
     font-family: GothamLight; /* Гарнитура шрифта */
-    src: url(fonts/githamlight.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/githamlight.ttf); /* Путь к файлу со шрифтом */
    }
 
 .footer_head{

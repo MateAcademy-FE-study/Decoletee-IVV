@@ -4,7 +4,7 @@ body {
     font-family: 'Istok Web', sans-serif;
 }
 
-a {
+.header .header__menu a {
     text-decoration: none;
     color: #555;
     font-size: 16px;
@@ -73,7 +73,7 @@ a {
 .content .content__info hr {
     height: 3px;
     width: 60px;
-    background: #d6399a;
+    background: #a70c5d;
     border: none;
     margin: 20px 0;
 }
@@ -86,7 +86,7 @@ a {
     margin-top: 10%;
     height: 45px;
     width: 170px;
-    background-color: #d6399a;
+    background-color: #a70c5d;
     border: none;
     border-radius: 20px;
     text-transform: uppercase;

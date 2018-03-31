@@ -51,75 +51,81 @@
                 </div>
             </div>
         </div>
+        <div>
+           <footer>
+        <div class="footer_delimiter"></div>
+        <div class="footer_head">
+            <p>ЗАПРОС НА УСЛУГИ</p>
+            <div class="underline"></div>
+        </div>
+        <div>
+            <form>
+                <div class="form">
+                    <div class="item_wrapper">
+                        <div class="footer_form">
+                        <input type="text" name="firstname" placeholder="ИМЯ">
+                        <br>
+                        <input type="text" name="phone" placeholder="ТЕЛЕФОН*">
+                            <br>
+                            <input type="email" name="email" placeholder="Е-MAIL*">
+                            <br>
+                            <input type="text" name="site" placeholder="САЙТ">
+                            <br>
+                        </div>
+                        <div class="list">
+                            <ul type="circle" class="list-unstyled">
+                            <li class="init">МЕНЯ ИНТЕРЕСУЕТ</li>
+                            <li data-value="value 1">Наведение порядка в делах</li>
+                            <li data-value="value 2">Правовое сопровождение деятельности</li>
+                            <li data-value="value 3">Оптимизация договорных отношений</li>
+                            <li data-value="value 4">Разработка договоров</li>
+                            </ul>
+                        </div>
+                    
 
-        <footer>
-            <div class="footer_delimiter"></div>
-            <div class="footer_head">
-                <p>ЗАПРОС НА УСЛУГИ</p>
-                <div class="underline"></div>
-            </div>
-            <div>
-                <form>
-                    <div class="input-form">
-                        <div class="input-form__items">
-                              <input type="text" name="firstname" placeholder="ИМЯ">
-                              <br>
-                              <input type="text" name="phone" placeholder="ТЕЛЕФОН">
-                                <br>
-                                <input type="email" name="email" placeholder="Е-MAIL">
-                                <br>
-                                <input type="text" name="site" placeholder="САЙТ">
-                                <br>
-                            <div class="input-form__list">
-                                <ul type="circle" >
-                                <li class="init">МЕНЯ ИНТЕРЕСУЕТ</li>
-                                <li data-value="value 1">Наведение порядка в делах</li>
-                                <li data-value="value 2">Правовое сопровождение деятельности</li>
-                                <li data-value="value 3">Оптимизация договорных отношений</li>
-                                <li data-value="value 4">Разработка договоров</li>
-                                </ul>
-                            </div>
-                        </div>
-                          <div class="input-form__textarea">
-                            <p>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</p>
-                             <textarea name="text" placeholder="Введите текст..."></textarea>
-                        </div>
+
                     </div>
-                        <div class="input-form__button">
-                            <button type="submit" class="button">	Отправить</button>
-                        </div>	
-                </form>
-            </div>
-            <div class="footer_delimiter"></div>
-            <div class="footer_about">
-                <p>
-                    <strong>PRAVO AGENCY: </strong>
-                </p>
-                <p>01001, Киев, ул.Костёльная 9, оф.8</p>
-                <p><a href="tel:+380 (67) 32 10 10"> +380 (67) 32 10 10 </a></p>
-                <a href="#">hello@pravo.agency</a>
-                <div >
-                  <ul class="footer_about__social">
-                    <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li class="google"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                  </ul>
+                    <div class="footer_textarea">
+                        <p>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</p>
+                         <textarea name="text" placeholder="Введите текст..."></textarea>
+                    </div>
                 </div>
-                    <p class="footer_about__intro">© 2015, <strong>Pravo agency</strong></p>
+                    <div class="bttn_submit_center">
+                        <button type="submit" class="button">   Отправить</button>
+                    </div>  
+            </form>
+        </div>
+        <div class="footer_delimiter"></div>
+        <div class="footer_footer">
+            <p>
+                <strong>PRAVO AGENCY: </strong>
+            </p>
+            <p>01001, Киев, ул.Костёльная 9, оф.8</p>
+            <p> +380 (67) 32 10 10 </p>
+            <a href="#">hello@pravo.agency</a>
+            <div class="wrapper_social">
+              <ul >
+                <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="google"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
             </div>
-        </footer>
-    <script>
-            $("ul").on("click", ".init", function() {
-                $(this).closest("ul").children('li:not(.init)').toggle();
-            });
-            var allOptions = $(".list ul").children('li:not(.init)');
-            $(".list ul").on("click", "li:not(.init)", function() {
-                allOptions.removeClass('selected');
-                $(this).addClass('selected');
-                $(".list ul").children('.init').html($(this).html());
-                allOptions.toggle();
-            });
-    </script>
+                <p class="bottom_intro">© 2015, <strong>Pravo agency</strong></p>
+        </div>
+    </footer>
+<script>
+$("ul").on("click", ".init", function() {
+    $(this).closest("ul").children('li:not(.init)').toggle();
+});
+
+var allOptions = $(".list ul").children('li:not(.init)');
+$(".list ul").on("click", "li:not(.init)", function() {
+    allOptions.removeClass('selected');
+    $(this).addClass('selected');
+    $(".list ul").children('.init').html($(this).html());
+    allOptions.toggle();
+});
+</script>
     </div>
 </body>
 </html>

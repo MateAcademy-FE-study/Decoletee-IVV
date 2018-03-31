@@ -1,107 +1,41 @@
 
 @font-face {
     font-family: Gotham; /* Гарнитура шрифта */
-    src: url(fonts/gotham.otf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/gotham.otf); /* Путь к файлу со шрифтом */
    }
    @font-face {
     font-family: GothamRegular; /* Гарнитура шрифта */
-    src: url(fonts/gothamregular.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/gothamregular.ttf); /* Путь к файлу со шрифтом */
    }
    @font-face {
     font-family: GothamLight; /* Гарнитура шрифта */
-    src: url(fonts/githamlight.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/githamlight.ttf); /* Путь к файлу со шрифтом */
    }
 
 .footer_head{
-	text-align: center;
-	font-size: 28pt;
-	font-family: Gotham;
-	color: #3f4147;
+  text-align: center;
+  font-size: 28pt;
+  font-family: Gotham;
+  color: #3f4147;
 }
-.underline{
-    background-color: #a70c5d;
-    height: 3px;
-    width: 60px;
-    margin: 0 auto;
-}
-.input-form{
-	display: flex;
-	flex-direction: row;
-	font-family: GothamRegular;
-	font-weight: 600;
-  	justify-content: center;
-  	margin-top: 70px; 
-}
-.input-form__items{
-	width: 400px;
-	text-align: right;
-}
-label {position:relative;}
-label:after {
-    content: url(arrow.png);
-    font:11px "Consolas", monospace;
-    color:#aaa;
-    right:10px; top:0;
-    padding:0 0 2px;
-    border-bottom:1px solid #ddd;
-    position:absolute;
-    pointer-events:none;
-}
-label:before {
-    content:'';
-    right:6px; top:0px;
-    width:20px; height:20px;
-    background:#f8f8f8;
-    position:absolute;
-    pointer-events:none;
-    display:block;
-}
-
-
-.input-form__list ul { 
-    font-family: GothamRegular;
-    border:  2px #dcdcdc solid;
-    margin-top: 50px; 
-    width: 370px;
-}
-.input-form__list ul li:first-child{
-    position: relative;
-    top: 2px;
-    list-style: none;
-    background-image: url('arrow.png');
-    background-repeat:no-repeat;
-    background-position:95%;
-    border-bottom: 2px solid #dcdcdc;
-    border-left: 2px solid #dcdcdc;
-    margin-left: -42px;
-    padding-left: 20px; 
-    background-color: #fcfcfd;
-    height: 50px;
-    line-height: 3; 
-}
-
-.input-form__list ul li {
-    text-align: left;
-    padding: 5px 10px; 
-    z-index: 2; 
-}
-.input-form__list ul li:not(.init) { 
-    display: none;
-    padding-top: 15px 
-}
-.input-form__list ul li:not(.init):hover, ul li.selected:not(.init) {
-    cursor: pointer; 
-    color: #a70c5d;
+.form{
+  display: flex;
+  flex-direction: row;
+  font-family: GothamRegular;
+  font-weight: 600;
+  justify-content: center;
+  margin-top: 70px; 
 
 }
-.input-form__list li.init { 
-    cursor: pointer; 
-
+.item_wrapper{
+  width: 400px;
+  text-align: right;
 }
-.input-form__textarea{
-	width: 400px;
-	text-align: left;
-	margin-left: 50px;
+.footer_textarea{
+  width: 400px;
+  text-align: left;
+  margin-left: 50px;
+
 }
 
 input {
@@ -121,12 +55,14 @@ input:focus {
     border-bottom: 2px solid #a70c5d;
     
 }
+
 textarea{
-	width: 400px;
-	height: 230px;
-	border-color: #dcdcdc;
-	padding:10px;
-	font-family: Gotham;
+  resize: none;
+  width: 400px;
+  height: 230px;
+  border-color: #dcdcdc;
+  padding:10px;
+  font-family: Gotham;
     font-weight: bold;
     -webkit-transition: border 3s, ; /* For Safari 3.1 to 6.0 */
     transition: border 3s;
@@ -155,35 +91,42 @@ textarea::placeholder {
     font-family: Gotham;
     font-size: 11pt;
 }
-.input-form__button{
-	text-align:center;
-	margin-top:60px;
+.bttn_submit_center{
+  text-align:center;
+  margin-top:60px;
     margin-bottom: 60px; 
 }
-
+.underline{
+    background-color: #a70c5d;
+    height: 3px;
+    width: 60px;
+    margin: 0 auto;
+}
 .footer_delimiter{
     height: 2px;
     background-color: #dcdcdc;
 }
-.footer_about{
+.footer_footer{
     text-align: center;
     font-family: GothamLight;
 }
 
-.footer_about a{
+.footer_footer a{
     color: #a70c5d;
 }
-.footer_about__social {
-width: 193px;
-margin: 15px auto;
-  
+.wrapper_social {
+width: 230px;
+margin-top: 15px;
+margin-bottom: 15px;
+margin-left: auto;
+margin-right: auto;    
 }
 
-.footer_about__social {
+.wrapper_social ul {
   list-style: none;
 }
 
- .footer_about__social li {
+ .wrapper_social ul li {
   width: 35px;
   height: 35px;
   margin: 0 5px;
@@ -194,35 +137,103 @@ margin: 15px auto;
   float: left;
 }
 
-.footer_about__social li .fa {
+.wrapper_social ul li .fa {
   color: #D8E2DC;
   margin-top: 10px;
 }
 
-.footer_about__social li:hover.facebook {
+.wrapper_social ul li:hover.facebook {
   border: 2px solid #3b5998;
+ 
+
 }
 
-.footer_about__social li:hover .fa-facebook {
+.wrapper_social ul li:hover .fa-facebook {
   color: #3b5998;
 }
 
-.footer_about__social li:hover.twitter {
+.wrapper_social ul li:hover.twitter {
   border: 2px solid #00aced;
 }
 
-.footer_about__social li:hover .fa-twitter {
+.wrapper_social ul li:hover .fa-twitter {
   color: #00aced;
 }
 
-.footer_about__social li:hover.google {
+.wrapper_social ul li:hover.google {
   border: 2px solid #dd4b39;
 }
 
-.footer_about__social li:hover .fa-linkedin {
+.wrapper_social ul li:hover .fa-linkedin {
   color: #dd4b39;
 }
-.footer_about__intro{
+.bottom_intro{
   margin-top:80px; 
 }
 
+label {position:relative;}
+label:after {
+    content: url(arrow.png);
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    right:10px; top:0;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    
+    pointer-events:none;
+}
+label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+
+.list ul { 
+    font-family: GothamRegular;
+    border:  2px #dcdcdc solid;
+    margin-top: 50px; 
+    width: 370px;
+    color: #585a5f;
+
+}
+.list ul li:first-child{
+    position: relative;
+    top: 2px;
+    list-style: none;
+    background-image: url('arrow.png');
+    background-repeat:no-repeat;
+    background-position:95%;
+    border-bottom: 2px solid #dcdcdc;
+    border-left: 2px solid #dcdcdc;
+    margin-left: -42px;
+    padding-left: 20px; 
+    background-color: #fcfcfd;
+    height: 50px;
+    line-height: 3; 
+    
+}
+.list ul li {
+   
+    text-align: left;
+    padding: 5px 10px; 
+    z-index: 2; 
+}
+.list ul li:not(.init) { 
+    display: none;
+    padding-top: 15px 
+}
+.list ul li:not(.init):hover, ul li.selected:not(.init) {
+    cursor: pointer; 
+    font-weight: bolder;
+    color: #a70c5d;
+
+}
+.list li.init { 
+    cursor: pointer; 
+}
