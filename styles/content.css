@@ -22,20 +22,10 @@
     font-family: 'MyraidPro'; /* Гарнитура шрифта */
     src: url('../fonts/MyriadProRegular.otf'); /* Путь к файлу со шрифтом */
     }
-* {
+/** {
     margin: 0;
     padding: 0;
-}
-
-/*html, body {
-    padding: 0;
 }*/
-
-/*.wrapper {
-    min-width: 1000px
-    height: 100vh;
-}*/
-
 
 
 /*STYLES OF 'SERVICES' -> START*/
@@ -64,6 +54,7 @@
 }
 
 .serv__title {
+    margin: 0;
   font-weight: bold;
   line-height: 1.333;
   text-align: center;
@@ -83,6 +74,7 @@
 
 .serv__subtitle {
     padding: 0 27%;
+    margin: 0;
     color: #727478;
     font-family: "GothamLight";
 }
@@ -212,6 +204,7 @@
 
 .rev__title {
   font-weight: bold;
+  margin: 0;
   line-height: 1.333;
   text-align: center;
   font-family: "Gotham";
@@ -229,6 +222,7 @@
 }
 
 .rev__subtitle {
+    margin: 0;
     padding: 0 27%;
     color: #727478;
     font-family: "GothamLight";
@@ -259,6 +253,7 @@
 .rev__text {
     width: 80%;
     font-family: "GothamLight";
+    margin: 0;
 }
 
 .img__youtube {
@@ -273,6 +268,7 @@
 }
 
 .img__author {
+
     /*padding-bottom: 20px;*/
 }
 
@@ -281,6 +277,7 @@
     font-size: 14px;
     font-family: "GothamBold";
     text-decoration: none;
+    margin: 0;
     padding: 20px 0;
 }
 
@@ -288,6 +285,7 @@
     float: left;
     font-size: 14px;
     font-family: "GothamLight";
+    margin: 0;
 }
 
 .author__post:after {
@@ -300,6 +298,7 @@
 .author__comp {
     float: left; 
     text-decoration: none;
+    margin: 0;
 }
 
 .author__comp>a {
