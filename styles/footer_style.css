@@ -14,9 +14,17 @@
 
 .footer_head{
   text-align: center;
-  font-size: 28pt;
+  font-size: 25px;
   font-family: Gotham;
   color: #3f4147;
+}
+.footer_head:after{
+   content: "";
+  margin: 20px auto;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #a70c5d;
 }
 .form-wrapper{
   display: flex;
@@ -57,7 +65,6 @@
     
 }
 .form-item__list ul li {
-   
     text-align: left;
     padding: 5px 10px; 
     z-index: 2; 
@@ -76,10 +83,6 @@
     cursor: pointer; 
 }
 
-
-
-
-
 .form-item__textarea{
   width: 400px;
   text-align: left;
@@ -96,8 +99,8 @@ input {
     padding: 5px;
     font-family: Gotham;
     font-weight: bold;
-    -webkit-transition: border-bottom 3s, ; /* For Safari 3.1 to 6.0 */
-    transition: border-bottom 3s;
+    -webkit-transition: border-bottom 0.5s, ; /* For Safari 3.1 to 6.0 */
+    transition: border-bottom 0.5s;
 }
 input:focus {
     outline: none;
@@ -113,8 +116,8 @@ textarea{
   padding:10px;
   font-family: Gotham;
     font-weight: bold;
-    -webkit-transition: border 3s, ; /* For Safari 3.1 to 6.0 */
-    transition: border 3s;
+    -webkit-transition: border 0.5s, ; /* For Safari 3.1 to 6.0 */
+    transition: border 0.5s;
 }
 
 textarea:focus {
@@ -145,12 +148,7 @@ textarea::placeholder {
   margin-top:60px;
     margin-bottom: 60px; 
 }
-.underline{
-    background-color: #a70c5d;
-    height: 3px;
-    width: 60px;
-    margin: 0 auto;
-}
+
 .footer_delimiter{
     height: 2px;
     background-color: #dcdcdc;

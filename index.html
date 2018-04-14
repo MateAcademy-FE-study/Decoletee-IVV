@@ -316,7 +316,6 @@ viewBox="0 0 4 10" style="enable-background:new 0 0 4 10;" xml:space="preserve">
         <div class="footer_delimiter"></div>
         <div class="footer_head">
             <p>ЗАПРОС НА УСЛУГИ</p>
-            <div class="underline"></div>
         </div>
         <div>
           <form>
@@ -375,11 +374,11 @@ viewBox="0 0 4 10" style="enable-background:new 0 0 4 10;" xml:space="preserve">
             $(this).closest("ul").children('li:not(.init)').toggle();
         });
 
-        var allOptions = $(".list ul").children('li:not(.init)');
-        $(".list ul").on("click", "li:not(.init)", function() {
+        var allOptions = $(".circle").children('li:not(.init)');
+        $(".circle").on("click", "li:not(.init)", function() {
             allOptions.removeClass('selected');
             $(this).addClass('selected');
-            $(".list ul").children('.init').html($(this).html());
+            $(".circle").children('.init').html($(this).html());
             allOptions.toggle();
         });
     </script>
