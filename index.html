@@ -1,68 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/content.css">
-    <link rel="stylesheet" href="styles/footer_style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/content.css">
+  <link rel="stylesheet" href="styles/footer_style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="jquery.selectric.min.js"></script>
+  <link rel="stylesheet" href="styles/selectric.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="welcome-page">
-            <header class="header">
-                <div class="header__logo">
-                    <img src="img/logo.svg" alt="Our logo"> 
-                </div>
-                <div class="header__menu">
-                    <ul>
-                        <li><a href="#">Услуги и цены</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="header__lang">
-                    <select name="lang">
-                        <option selected>ru</option>
-                        <option value="en">en</option>
-                        <option value="es">es</option>
-                        <option value="cn">cn</option>
-                    </select>
-                </div>
-            </header>
-            <div class="content">
-                <div class="content__info">
-                    <h1>Правовое <br> сопровождение<br> малого ИТ-бизнеса </h1>
-                    <hr>
-                    <p>Зачастую интернет-проекты, разработчики, маркетологи,<br> дизайнеры, стартаперы и другие IT-специалисты не <br> уделяют должного внимания правовым аспектам своей <br> деятельности.</p>
-                    <p>Но <b>документы должны быть в порядке</b>, и мы в этом <br> поможем.</p>
-                    <div class="content__button">
-                        <button class="btn_price">Услуги и цены</button>  
-                    </div>
-                </div>
-                <div class="content__person">
-                    <img src="img/person.png" alt="image with man">
-                </div>
-                <div class="content__btn">
-                    <img src="img/btn-play.png" alt="Play">
-                </div>
-            </div>
+<div class="wrapper">
+  <div class="welcome-page">
+    <header class="header">
+      <div class="header__logo">
+        <img src="img/logo.svg" alt="Our logo">
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="#">Услуги и цены</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="header__lang">
+        <select name="lang">
+          <option selected>ru</option>
+          <option value="en">en</option>
+          <option value="es">es</option>
+          <option value="cn">cn</option>
+        </select>
+      </div>
+    </header>
+    <div class="content">
+      <div class="content__info">
+        <h1>Правовое <br> сопровождение<br> малого ИТ-бизнеса </h1>
+        <hr>
+        <p>Зачастую интернет-проекты, разработчики, маркетологи,<br> дизайнеры, стартаперы и другие
+          IT-специалисты не <br> уделяют должного внимания правовым аспектам своей <br> деятельности.</p>
+        <p>Но <b>документы должны быть в порядке</b>, и мы в этом <br> поможем.</p>
+        <div class="content__button">
+          <button class="btn_price">Услуги и цены</button>
         </div>
-        <section id="services" class="wrapper">
-            <header>
-                <h1 class="serv__title">УСЛУГИ И ЦЕНЫ</h1>
-                <p class="serv__subtitle"><b>Pravo agency</b> выполняет роль юристов-аутсорсеров, надежно прикрывая правовой тыл вашей деятельности.</p>
-            </header>
+      </div>
+      <div class="content__person">
+        <img src="img/person.png" alt="image with man">
+      </div>
+      <div class="content__btn">
+        <img src="img/btn-play.png" alt="Play">
+      </div>
+    </div>
+  </div>
+  <section id="services" class="wrapper">
+    <header>
+      <h1 class="serv__title">УСЛУГИ И ЦЕНЫ</h1>
+      <p class="serv__subtitle"><b>Pravo agency</b> выполняет роль юристов-аутсорсеров, надежно прикрывая правовой
+        тыл вашей деятельности.</p>
+    </header>
 
-            <div class="serv__content">
-                <div class="serv__block">
-                    <svg class="serv__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <div class="serv__content">
+      <div class="serv__block">
+        <svg class="serv__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;" xml:space="preserve">
-                    <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:0.6901;stroke-miterlimit:10;} .st1{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;} </style>
+                    <style type="text/css"> .st0 {
+                      fill: none;
+                      stroke: #000000;
+                      stroke-width: 0.6901;
+                      stroke-miterlimit: 10;
+                    }
+
+                    .st1 {
+                      fill: none;
+                      stroke: #000000;
+                      stroke-width: 0.75;
+                      stroke-miterlimit: 10;
+                    } </style>
                     <rect x="0.7" y="0.8" class="st0 svg__st" width="20.7" height="18.7"/>
                     <line class="st1 svg__st" x1="4.5" y1="0.8" x2="4.5" y2="19.5"/>
                     <line class="st1 svg__st" x1="8.3" y1="0.8" x2="8.3" y2="19.5"/>
@@ -74,13 +91,18 @@
                     <line class="st1 svg__st" x1="10.7" y1="8.3" x2="16.4" y2="8.3"/>
                     <line class="st1 svg__st" x1="10.7" y1="10.2" x2="19.2" y2="10.2"/>
                 </svg>
-                <!-- <img class="img__document" src="img/document.svg" alt="document"> -->
-                <h2 class="block__title">Наведение порядка в делах</h2>
-                <svg version="1.1" class="img__info" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <!-- <img class="img__document" src="img/document.svg" alt="document"> -->
+        <h2 class="block__title">Наведение порядка в делах</h2>
+        <svg version="1.1" class="img__info" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 4 10" style="enable-background:new 0 0 4 10;" xml:space="preserve">
                 <style type="text/css">
-                .st0{fill:none;}
-                .st1{enable-background:new    ;}
+                .st0 {
+                  fill: none;
+                }
+
+                .st1 {
+                  enable-background: new;
+                }
             </style>
             <g class="st1">
                 <path class="svg__st" d="M0.5,9.3L0.4,8.1L1.1,8V4.6L0.5,4.6l0.1-1.2h2.3v4.8l0.7,0L3.5,9.3H0.5z M2,2.4C1.4,2.4,1,2,1,1.5C1,1,1.3,0.6,2,0.6
@@ -88,14 +110,14 @@
             </g>
         </svg>
         <!-- <img src="img/info.svg" alt="info" class="img__info"> -->
-        <ul class="block__text">Аудит документов и платежей на предмет: 
-            <li class="block__parag">соблюдения необходимых формальностей и процедур, </li>
-            <li class="block__parag">наличия всех оригиналов договоров, актов, </li>
-            <li class="block__parag">легализация зависших платежей.</li>
+        <ul class="block__text">Аудит документов и платежей на предмет:
+          <li class="block__parag">соблюдения необходимых формальностей и процедур,</li>
+          <li class="block__parag">наличия всех оригиналов договоров, актов,</li>
+          <li class="block__parag">легализация зависших платежей.</li>
         </ul>
-    </div>
+      </div>
 
-    <div class="serv__block">
+      <div class="serv__block">
         <svg class="serv__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
         <g>
@@ -114,38 +136,72 @@
             C23.1,11.8,22.5,9.8,21.3,8z"/>
         </g>
     </svg>
-    <!-- <img class="img__document" src="img/target.svg" alt="document"> -->
-    <h2 class="block__title">Оптимизация договорных отношений</h2>
-    <!-- <img src="img/info.svg" alt="info" class="img__info"> -->
-    <svg version="1.1" class="img__info" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <!-- <img class="img__document" src="img/target.svg" alt="document"> -->
+        <h2 class="block__title">Оптимизация договорных отношений</h2>
+        <!-- <img src="img/info.svg" alt="info" class="img__info"> -->
+        <svg version="1.1" class="img__info" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 4 10" style="enable-background:new 0 0 4 10;" xml:space="preserve">
     <style type="text/css">
-    .st0{fill:none;}
-    .st1{enable-background:new    ;}
+    .st0 {
+      fill: none;
+    }
+
+    .st1 {
+      enable-background: new;
+    }
 </style>
 <g class="st1">
     <path class="svg__st" d="M0.5,9.3L0.4,8.1L1.1,8V4.6L0.5,4.6l0.1-1.2h2.3v4.8l0.7,0L3.5,9.3H0.5z M2,2.4C1.4,2.4,1,2,1,1.5C1,1,1.3,0.6,2,0.6
     c0.7,0,1,0.4,1,0.9C3,2.1,2.6,2.4,2,2.4z"/>
 </g>
 </svg>
-<ul class="block__text">
-    <li class="block__parag">Доработка, латание дыр и улучшение условий основных типовых договоров вашей компании </li>
-    <li class="block__parag">Оформление сотрудников на оптимальных условиях ведения деятельности и налогообложения</li>
-    <li class="block__parag">Составление договоров, соглашений о конфиденциальности, публичных офферт,</li>
-</ul>
-</div>
-</div>
+        <ul class="block__text">
+          <li class="block__parag">Доработка, латание дыр и улучшение условий основных типовых договоров вашей
+            компании
+          </li>
+          <li class="block__parag">Оформление сотрудников на оптимальных условиях ведения деятельности и
+            налогообложения
+          </li>
+          <li class="block__parag">Составление договоров, соглашений о конфиденциальности, публичных офферт,
+          </li>
+        </ul>
+      </div>
+    </div>
 
 
-<div class="serv__content">
-    <div class="serv__block">
+    <div class="serv__content">
+      <div class="serv__block">
         <svg class="serv__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 24 23" style="enable-background:new 0 0 24 23;" xml:space="preserve">
         <style type="text/css">
-        .st0{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
-        .st1{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-        .st2{fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-        .st3{stroke:#000000;stroke-width:0.2758;stroke-miterlimit:10;}
+        .st0 {
+          fill: none;
+          stroke: #000000;
+          stroke-width: 0.75;
+          stroke-miterlimit: 10;
+        }
+
+        .st1 {
+          fill: none;
+          stroke: #000000;
+          stroke-width: 0.5;
+          stroke-miterlimit: 10;
+        }
+
+        .st2 {
+          fill: none;
+          stroke: #000000;
+          stroke-width: 0.75;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-miterlimit: 10;
+        }
+
+        .st3 {
+          stroke: #000000;
+          stroke-width: 0.2758;
+          stroke-miterlimit: 10;
+        }
     </style>
     <g>
         <polygon class="st0 svg__st" points="3.7,18 2.2,21.5 0.7,18 0.7,2.4 3.7,2.4     "/>
@@ -172,35 +228,59 @@
         <polygon class="st3 svg__fl" points="2.8,20.2 2.2,21.6 1.6,20.2"/>
     </g>
 </svg>
-<!-- <img class="img__document" src="img/notepad.svg" alt="document"> -->
-<h2 class="block__title">Правовое сопровождение деятельности (юрист-аутсорсер)</h2>
-<!-- <img src="img/info.svg" alt="info" class="img__info"> -->
-<svg class="img__info" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <!-- <img class="img__document" src="img/notepad.svg" alt="document"> -->
+        <h2 class="block__title">Правовое сопровождение деятельности (юрист-аутсорсер)</h2>
+        <!-- <img src="img/info.svg" alt="info" class="img__info"> -->
+        <svg class="img__info" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 4 10" style="enable-background:new 0 0 4 10;" xml:space="preserve">
 <style type="text/css">
-.st0{fill:none;}
-.st1{enable-background:new    ;}
+.st0 {
+  fill: none;
+}
+
+.st1 {
+  enable-background: new;
+}
 </style>
 <g class="st1">
     <path class="svg__st" d="M0.5,9.3L0.4,8.1L1.1,8V4.6L0.5,4.6l0.1-1.2h2.3v4.8l0.7,0L3.5,9.3H0.5z M2,2.4C1.4,2.4,1,2,1,1.5C1,1,1.3,0.6,2,0.6
     c0.7,0,1,0.4,1,0.9C3,2.1,2.6,2.4,2,2.4z"/>
 </g>
 </svg>
-<ul class="block__text">
-    <li class="block__parag">Участие в заключении договоров: минимизация рисков, усиление ваших позиций</li>
-    <li class="block__parag">Юридическая консультация</li>
-    <li class="block__parag">Дайджест предпринимательских ИТ-новостей с разъяснениями</li>
-    <li class="block__parag">Представительство интересов в судах</li>
-</ul>
-</div>
+        <ul class="block__text">
+          <li class="block__parag">Участие в заключении договоров: минимизация рисков, усиление ваших
+            позиций
+          </li>
+          <li class="block__parag">Юридическая консультация</li>
+          <li class="block__parag">Дайджест предпринимательских ИТ-новостей с разъяснениями</li>
+          <li class="block__parag">Представительство интересов в судах</li>
+        </ul>
+      </div>
 
-<div class="serv__block">
-    <svg class="serv__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <div class="serv__block">
+        <svg class="serv__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
     <style type="text/css">
-    .st0{fill:#FFFFFF;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
-    .st1{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-    .st2{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+    .st0 {
+      fill: #FFFFFF;
+      stroke: #000000;
+      stroke-width: 0.75;
+      stroke-miterlimit: 10;
+    }
+
+    .st1 {
+      fill: none;
+      stroke: #000000;
+      stroke-width: 0.5;
+      stroke-miterlimit: 10;
+    }
+
+    .st2 {
+      fill: none;
+      stroke: #000000;
+      stroke-width: 0.75;
+      stroke-miterlimit: 10;
+    }
 </style>
 <g>
     <g>
@@ -241,38 +321,46 @@ viewBox="0 0 4 10" style="enable-background:new 0 0 4 10;" xml:space="preserve">
     </g>
 </g>
 </svg>
-<!-- <img class="img__document" src="img/court.svg" alt="document"> -->
-<h2 class="block__title">Разработка договоров и другой документации</h2>
-<!-- <img src="img/info.svg" alt="info" class="img__info"> -->
-<svg class="img__info" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <!-- <img class="img__document" src="img/court.svg" alt="document"> -->
+        <h2 class="block__title">Разработка договоров и другой документации</h2>
+        <!-- <img src="img/info.svg" alt="info" class="img__info"> -->
+        <svg class="img__info" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 4 10" style="enable-background:new 0 0 4 10;" xml:space="preserve">
 <style type="text/css">
-.st0{fill:none;}
-.st1{enable-background:new    ;}
+.st0 {
+  fill: none;
+}
+
+.st1 {
+  enable-background: new;
+}
 </style>
 <g class="st1">
     <path class="svg__st" d="M0.5,9.3L0.4,8.1L1.1,8V4.6L0.5,4.6l0.1-1.2h2.3v4.8l0.7,0L3.5,9.3H0.5z M2,2.4C1.4,2.4,1,2,1,1.5C1,1,1.3,0.6,2,0.6
     c0.7,0,1,0.4,1,0.9C3,2.1,2.6,2.4,2,2.4z"/>
 </g>
 </svg>
-<ul class="block__text">К сожалению, конфликты бывают в любой сфере. Если дело близится к суду или уже дошло до него, мы поможем отстоять ваши права и интересы.
-</ul>
-</div>
-</div> 
-</section>
+        <ul class="block__text">К сожалению, конфликты бывают в любой сфере. Если дело близится к суду или уже
+          дошло до него, мы поможем отстоять ваши права и интересы.
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<section id="reviews" class="wrapper">
+  <section id="reviews" class="wrapper">
     <header>
-        <h1 class="rev__title">отзывы</h1>
-        <p class="rev__subtitle">Мнение нашых клиентов <b>делает мир и нас лучше :)</b></p>
+      <h1 class="rev__title">отзывы</h1>
+      <p class="rev__subtitle">Мнение нашых клиентов <b>делает мир и нас лучше :)</b></p>
     </header>
     <div class="rev__content">
-        <div class="rev__block--text">
-            
-            <svg class="img__quotes" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <div class="rev__block--text">
+
+        <svg class="img__quotes" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
             <style type="text/css">
-            .st0{enable-background:new    ;}
+            .st0 {
+              enable-background: new;
+            }
         </style>
         <g class="st0">
             <path d="M5.6,8.5c0,0.5-0.2,1-0.6,1.4c-0.4,0.4-0.9,0.6-1.6,0.6c-0.5,0-0.8-0.1-1.2-0.3c-0.3-0.2-0.6-0.4-0.8-0.7
@@ -283,105 +371,118 @@ viewBox="0 0 4 10" style="enable-background:new 0 0 4 10;" xml:space="preserve">
             c-0.6,0.4-1,0.9-1.3,1.3C9.6,5.1,9.4,5.7,9.4,6.4c0.5,0,0.9,0.3,1.2,0.7C10.9,7.5,11,7.9,11,8.5z"/>
         </g>
     </svg>
-    <!-- <img src="img/quotes.svg" alt="Quotes" class="img__quotes"> -->
-    <p class="rev__text">Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки найти счастье.</p>
-    <img src="img/rev1.png" alt="Author" class="img__author">
-    <p class="author__name"><b>Алексей Фёдеров</b></p>
-    <p class="author__post">CEO</p>
-    <p class="author__comp"><a href="#">deco.agency</a></p>
-</div>
-<div class="rev__block--text">
-    <img src="img/quotes.svg" alt="Quotes" class="img__quotes">
-    <p class="rev__text">Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки найти счастье.</p>
-    <img src="img/rev2.png" alt="Author" class="img__author">
-    <p class="author__name"><b>Артур Оруджалиев</b></p>
-    <p class="author__post">CEO</p>
-    <p class="author__comp"><a href="#">AIN.ua</a></p>
-</div>
-<div class="rev__block--text">
-    <img src="img/youtube.png" alt="Quotes" class="img__youtube">
-    <iframe src="https://www.youtube.com/embed/9XaS93WMRQQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="rev__video"></iframe>
-    <p class="author__name"><b>Григорий Маленко</b></p>
-    <p class="author__post">CEO</p>
-    <p class="author__comp"><a href="#">SERM.ua</a></p>
-</div>        
-</div>
-<footer class="rev__footer">
-    <img src="img/reload.svg" alt="reload" class="img__reload">
-    <h2 class="reload__text">загрузить еще</h2>
-</footer>
-</section>
-<div>
+        <!-- <img src="img/quotes.svg" alt="Quotes" class="img__quotes"> -->
+        <p class="rev__text">Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому
+          все, что мы делаем, — это всего лишь попытки найти счастье.</p>
+        <img src="img/rev1.png" alt="Author" class="img__author">
+        <p class="author__name"><b>Алексей Фёдеров</b></p>
+        <p class="author__post">CEO</p>
+        <p class="author__comp"><a href="#">deco.agency</a></p>
+      </div>
+      <div class="rev__block--text">
+        <img src="img/quotes.svg" alt="Quotes" class="img__quotes">
+        <p class="rev__text">Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому
+          все, что мы делаем, — это всего лишь попытки найти счастье.</p>
+        <img src="img/rev2.png" alt="Author" class="img__author">
+        <p class="author__name"><b>Артур Оруджалиев</b></p>
+        <p class="author__post">CEO</p>
+        <p class="author__comp"><a href="#">AIN.ua</a></p>
+      </div>
+      <div class="rev__block--text">
+        <img src="img/youtube.png" alt="Quotes" class="img__youtube">
+        <iframe src="https://www.youtube.com/embed/9XaS93WMRQQ" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen class="rev__video"></iframe>
+        <p class="author__name"><b>Григорий Маленко</b></p>
+        <p class="author__post">CEO</p>
+        <p class="author__comp"><a href="#">SERM.ua</a></p>
+      </div>
+    </div>
+    <footer class="rev__footer">
+      <img src="img/reload.svg" alt="reload" class="img__reload">
+      <h2 class="reload__text">загрузить еще</h2>
+    </footer>
+  </section>
+  <div>
     <footer>
-        <div class="footer_delimiter"></div>
-        <div class="footer_head">
-            <p>ЗАПРОС НА УСЛУГИ</p>
-        </div>
-        <div>
-          <form>
-            <div class="form-wrapper">
-              <div class="form-item__input">
-                <div>
-                  <input type="text" name="firstname" placeholder="ИМЯ">
-                  <br>
-                  <input type="text" name="phone" placeholder="ТЕЛЕФОН*">
-                  <br>
-                  <input type="email" name="email" placeholder="Е-MAIL*">
-                  <br>
-                  <input type="text" name="site" placeholder="САЙТ">
-                  <br>
-                </div>
-                <div class="form-item__list">
-                  <ul type="circle">
-                    <li class="init">МЕНЯ ИНТЕРЕСУЕТ</li>
-                    <li data-value="value 1">Наведение порядка в делах</li>
-                    <li data-value="value 2">Правовое сопровождение деятельности</li>
-                    <li data-value="value 3">Оптимизация договорных отношений</li>
-                    <li data-value="value 4">Разработка договоров</li>
-                  </ul>
-                </div>
+      <div class="footer_head">
+        <p>ЗАПРОС НА УСЛУГИ</p>
+      </div>
+      <div>
+        <form>
+          <div class="form-wrapper">
+            <div class="form-item__input">
+              <div>
+                <input type="text" name="firstname" placeholder="ИМЯ">
+                <br>
+                <input type="text" name="phone" placeholder="ТЕЛЕФОН*">
+                <br>
+                <input type="email" name="email" placeholder="Е-MAIL*">
+                <br>
+                <input type="text" name="site" placeholder="САЙТ">
+                <br>
               </div>
-              <div class="form-item__textarea">
-                <p>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</p>
-                <textarea name="text" placeholder="Введите текст..."></textarea>
+              <div class="client__select select">
+                <div class="select__arrow arrow">
+                  <div class="arrow__up"></div>
+                  <div class="arrow__down"></div>
+                </div>
+                <label for="interest" class="select__label">меня интересует</label>
+                <select size="1" name="interest" id="interest" class="select__menu">
+                  <option value="0"></option>
+                  <option value="1">
+                    ○ Наведение порядка в делах
+                  </option>
+                  <option value="2">
+                    ○ Правовое сопровождение деятельности
+                  </option>
+                  <option value="3">
+                    ○ Оптимизация договорных отношений
+                  </option>
+                  <option value="4">
+                    ○ Разработка договоров
+                  </option>
+                </select>
               </div>
             </div>
-            <div class="bttn_submit_center">
-              <button type="submit" class="form-item__button">   Отправить</button>
-            </div>  
-          </form>
-        </div>
-        <div class="footer_delimiter"></div>
-        <div class="footer_footer">
-          <p>
-              <strong>PRAVO AGENCY: </strong>
-          </p>
-          <p>01001, Киев, ул.Костёльная 9, оф.8</p>
-          <p> +380 (67) 32 10 10 </p>
-          <a href="#">hello@pravo.agency</a>
-          <div class="wrapper_social">
-            <ul >
-              <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li class="google"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            </ul>
+            <div class="form-item__textarea">
+              <p>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</p>
+              <textarea name="text" placeholder="Введите текст..."></textarea>
+            </div>
           </div>
-          <p class="bottom_intro">© 2015, <strong>Pravo agency</strong></p>
+          <div class="bttn_submit_center">
+            <button type="submit" class="form-item__button"> Отправить</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer_delimiter"></div>
+      <div class="footer_footer">
+        <p>
+          <strong>PRAVO AGENCY: </strong>
+        </p>
+        <p>01001, Киев, ул.Костёльная 9, оф.8</p>
+        <p> +380 (67) 32 10 10 </p>
+        <a href="#">hello@pravo.agency</a>
+        <div class="wrapper_social">
+          <ul>
+            <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="google"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
         </div>
+        <p class="bottom_intro">© 2015, <strong>Pravo agency</strong></p>
+      </div>
     </footer>
     <script>
-        $("ul").on("click", ".init", function() {
-            $(this).closest("ul").children('li:not(.init)').toggle();
+      $(document).ready(function () {
+        $('.select__menu').selectric({});
+        $('#interest').change(function () {
+          if ($(this).val() != 0) {
+            $(".select__label").css("display", "none");
+          }
         });
-
-        var allOptions = $(".circle").children('li:not(.init)');
-        $(".circle").on("click", "li:not(.init)", function() {
-            allOptions.removeClass('selected');
-            $(this).addClass('selected');
-            $(".circle").children('.init').html($(this).html());
-            allOptions.toggle();
-        });
+      });
     </script>
+  </div>
 </div>
 </body>
 </html>
