@@ -1,0 +1,23 @@
+{
+  "name": "psd-maket",
+  "version": "1.0.0",
+  "description": "[Landing](https://mateacademy-fe-study.github.io/Decoletee-IVV/)",
+  "main": "jquery.selectric.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateAcademy-FE-study/Decoletee-IVV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateAcademy-FE-study/Decoletee-IVV/issues"
+  },
+  "homepage": "https://github.com/MateAcademy-FE-study/Decoletee-IVV#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
