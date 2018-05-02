@@ -1,0 +1,269 @@
+@font-face
+    font-family: 'Gotham'
+    src: url('../fonts/gotham.otf')
+
+@font-face
+    font-family: 'GothamRegular'
+    src: url('../fonts/gothamregular.ttf')
+
+@font-face
+    font-family: 'GothamLight'
+    src: url('../fonts/githamlight.ttf')
+
+@font-face 
+    font-family: 'GothamBold'
+    src: url('../fonts/Gotham Bold.otf')
+
+@font-face
+    font-family: 'BanderaPro'
+    src: url('../fonts/9087.otf')
+
+@font-face
+    font-family: 'MyraidPro'
+    src: url('../fonts/MyriadProRegular.otf')
+
+.services
+	width: 100%
+	background: #ffffff
+	border-bottom: 2px solid #f4f4f4
+	&>header
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-content: center
+		align-items: center
+		text-align: center
+		padding: 60px 0
+		flex-direction: column
+		justify-content: center
+		border-bottom: 1px solid #f4f4f4
+	&__title
+	   margin: 0
+	   width: 100%
+	   font-weight: bold
+	   line-height: 1.333
+	   text-align: center
+	   font-family: "Gotham"
+	   font-size: 28px
+	   color: #3f4147
+	   text-transform: uppercase
+	   font-weight: bold
+	   &:after
+	   	content: ""
+	   	display: block
+	   	width: 50px
+	   	height: 2px
+	   	background: #a70c5d
+	   	margin: 20px auto
+	&__subtitle
+		width: 100%
+	   margin: 0
+	   color: #3f4147
+	   font-family: "GothamRegular"
+	   font-size: 15px
+	&__content
+		padding: 60px 60px 0 120px
+		display: -webkit-inline-flex
+		display: -moz-inline-flex
+		display: -ms-inline-flex
+		display: -o-inline-flex
+		display: inline-flex
+	&__block
+		width: 50%
+		&:hover
+			cursor: pointer
+	&__img
+		width: 36px
+		height: 36px
+		float: left
+		&:hover
+			cursor: pointer
+
+.block
+	&__title
+		float: left
+		padding-left: 30px
+		font-family: "Gotham"
+		text-transform: uppercase
+		color: #3f4147
+		font-size: 15px
+		line-height: 20px
+		width: 315px
+		&:after
+
+	&__info
+		float: left
+		width: 30px
+		height: 30px
+		border: 2px solid #ae206a
+		border-radius: 50%
+		text-align: center
+		line-height: 30px
+		font-family: "BanderaPro"		
+	&__text
+		padding: 0 0 50px 70px
+		width: 70%
+		float: left
+		font-family: "GothamLight"
+	&__parag
+		list-style: none
+		&:before
+			content: "o"
+			padding-right: 10px
+			font-weight: bold
+			color: #ae206a
+			font-family: "Gotham"
+
+.services__block:hover
+	& .svg__st
+		stroke: #a81060
+	&.img__info
+		background: #a81060
+		&.info
+			fill: #ffffff
+			stroke: #FFFFFF
+
+.reviews
+	width: 100%
+	background: #ffffff
+	border-bottom: 2px solid #f4f4f4
+	&>header
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		text-align: center
+		padding: 60px 0 0 0
+		justify-content: center
+	&__title
+		font-weight: bold
+		margin: 0
+		line-height: 1.333
+		text-align: center
+		font-family: "Gotham"
+		text-transform: uppercase
+		&:after
+			content: ""
+			display: block
+			width: 50px
+			height: 2px
+			background: #a70c5d
+			margin: 20px auto
+	&__subtitle
+		margin: 0
+		padding: 0 27%
+		color: #3f4147
+		font-family: "GothamLight"
+	&__content
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		padding: 80px 80px 0 80px
+	&__block--text
+		width: 33.3%
+	&__block--video
+		width: 33.3%
+	&__text
+		width: 80%
+		font-family: "GothamLight"
+		margin: 0
+		font-size: 17px
+		line-height: 1.471
+		padding-bottom: 40px
+	&__video
+		width: 80%
+		height: 200px
+		display: block
+	&__footer
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 148px
+		line-height: 60px
+
+.author
+	&__name
+		font-family: "GothamLight"
+		font-size: 1rem
+		font-family: "GothamBold"
+		text-decoration: none
+		margin: 0
+		padding: 20px 0
+	&__post
+		float: left
+		font-size: 14px
+		font-family: "GothamLight"
+		margin: 0
+		&:after
+			content: "•"
+			padding: 0 10px
+			color: #a70c5d
+			transform: translateX(-10px)
+	&__comp
+		float: left
+		text-decoration: none
+		margin: 0
+		&--link
+			color: #000000
+			font-weight: bold
+			text-decoration: underline #d8d9d9
+			font-family: "Gotham"
+			&:hover
+				color: #a70c5d
+	
+.reviews__block--text:hover
+	cursor: pointer
+	& .author__name
+		color: #a70c5d
+
+.reviews__block--video:hover
+	cursor: pointer
+	& .author__name
+		color: #a70c5d
+		
+
+.reload__text
+	line-height: 60px
+	text-transform: uppercase
+	font-family: "Gotham"
+	display: inline-block
+	font-size: 11px
+	margin: 0
+
+.img
+	&__info
+		width: 30px
+		height: 30px
+		border: 2px solid #ae206a
+		border-radius: 50%
+		padding: 5px
+		margin-left: 20%
+	&__quotes
+		width: 20px
+		padding-bottom: 20px
+		stroke: #a70c5d
+	&__youtube
+		display: block
+		padding-bottom: 20px
+	&__reload
+		height: 20px
+		line-height: 60px
+		vertical-align: middle
+		padding-right: 10px
+
+.services__subtitle b
+    color:#000000
+
+
+.reviews__subtitle b
+    color:#000000
