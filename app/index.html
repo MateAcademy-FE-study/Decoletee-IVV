@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
   integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="jquery.selectric.min.js"></script>
   <link rel="stylesheet" href="css/selectric.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/content_style.css">
   <link rel="stylesheet" href="css/footer_style.css">
+  <script src="jquery.selectric.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -348,7 +348,7 @@
                   <div class="arrow__up"></div>
                   <div class="arrow__down"></div>
                 </div>
-                <select size="1" name="interest" id="interest">
+                <select name="interest" id="interest">
                   <option value="0" selected disabled="disabled" hidden="hidden">МЕНЯ ИНТЕРЕСУЕТ</option>
                   <option value="1">
                    Наведение порядка в делах
@@ -397,9 +397,9 @@
   </div>
 </footer>
 <script>
-  $(function(){
-    $('select').selectric();
-  });
+
+      $('select').selectric();
+
 </script>
 </div>
 </div>
