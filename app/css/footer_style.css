@@ -75,7 +75,7 @@
   border: 1px solid #cacbd0;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  z-index: 9999;
+  z-index: 99999;
   }
 
 .arrow__down {
@@ -177,7 +177,7 @@ textarea {
 
 .bttn_submit_center {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 80px;
   margin-bottom: 60px; }
 
 .footer_delimiter {
