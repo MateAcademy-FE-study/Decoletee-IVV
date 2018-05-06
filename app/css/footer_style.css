@@ -141,13 +141,18 @@ textarea {
   height: 2px;
   background-color: #dcdcdc; }
 
-.footer__footer {
+.footer__social {
   padding-top: 50px;
   text-align: center;
   font-family: GothamLight, sans-serif; }
 
-.footer__footer a {
+.footer__social a {
   color: #a70c5d; }
+
+.footer__callus a{
+  text-decoration: none;
+  color: #3f4147;
+}
 
 .wrapper_social {
   width: 230px;
