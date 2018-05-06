@@ -407,23 +407,33 @@
   </div>
 </div>
     <script>
-
-      $('select').selectric();
+    $('select').on('selectric-open', function() {
+        var arrow = document.getElementsByClassName("select__arrow")[0];
+        arrow.style.transform = "rotate(0deg)"
+      }).selectric();
+      $('select').on('selectric-close', function() {
+        var arrow = document.getElementsByClassName("select__arrow")[0];
+        arrow.style.transform = "rotate(180deg)"
+      }).selectric();
 
     </script>
-    <script>
-    document.getElementsByClassName("selectric")[1].addEventListener("click", myFunction);
+    <!-- <script>
+    document.getElementsByClassName("selectric")[0,1].addEventListener("click", myFunction);
     function myFunction(){
-    var arrow = document.getElementsByClassName("select__arrow")[0];
-    if(arrow.style.transform === "rotate(0deg)" ){
-      arrow.style.transform = "rotate(180deg)"
-      console.log("1");
-      return
+      var list = document.getElementsByTagName("ul")[6].getElementsByTagName("li");
+      for(var i = 0; i < list.length ; i++){
+        console.log(list[i]);
+      }
+      var arrow = document.getElementsByClassName("select__arrow")[0];
+      if(arrow.style.transform === "rotate(0deg)" ){
+        arrow.style.transform = "rotate(180deg)"
+        console.log("1");
+        return
+      }
+      else{
+        arrow.style.transform = "rotate(0deg)";
+      }
     }
-    else{
-      arrow.style.transform = "rotate(0deg)";
-    }
-    }
-    </script>
+    </script> -->
   </body>
 </html>
