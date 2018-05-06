@@ -13,7 +13,7 @@
   src: url(../../fonts/githamlight.ttf) /* Путь к файлу со шрифтом */
 
 
-.footer_head
+.footer__head
   margin-top: 50px
   text-align: center
   font-size: 25px
@@ -27,12 +27,12 @@
     height: 2px
     background: #a70c5d
 
-.form-wrapper
+.form__wrapper
   font-family: GothamRegular, sans-serif
   font-weight: 600
   margin-top: 70px
 
-.form-item__input
+.form__input
   width: 100%
   text-align: right
 
@@ -73,46 +73,19 @@
   bottom: 15px
   z-index: 99999
 
-.arrow
-  width: 20px
-  height: 20px
-  top: 27px
-  box-sizing: border-box
-  border: 1px solid #cacbd0
-  border-radius: 10px
-  z-index: 99999
-
-.arrow__down
-  box-sizing: border-box
-  height: 6px
-  width: 6px
-  border-style: solid
-  border-width: 0 2px 2px 0
-  border-color: transparent #cacbd0 #cacbd0 transparent
-  transform: rotate(45deg)
-  margin-left: 6px
-  margin-top: 8px
-  position: relative
-  &:after
-    content: " "
-    display: block
-    box-sizing: border-box
-    height: 8px
-    width: 2px
-    background-color: #cacbd0
-    transform: rotate(-45deg)
-    position: absolute
-    margin-left: 2.5px
-    margin-top: 0
-    top: -2px
-    left: -2px
-
-
-.form-item__textarea
+.form__textarea
+  padding-top: 16px
   width: 100%
   text-align: left
 
-.form-item__input
+.form__textarea p
+  font-size: 13px
+  font-family: Gotham, sans-serif
+  font-weight: bold
+  color: #757575
+  margin-bottom: 10px
+
+.form__input
     input
       border: none
       border-bottom: 2px solid #dcdcdc
@@ -125,7 +98,7 @@
       -webkit-transition: border-bottom 0.5s /* For Safari 3.1 to 6.0 */
       transition: border-bottom 0.5s
 
-.form-item__input
+.form__input
   input:focus
     outline: none
     border-bottom: 2px solid #a70c5d
@@ -147,7 +120,7 @@ textarea
     color: #dcdcdc
     font-weight: lighter
 
-.form-item__button
+.form__button
   background-color: #a70c5d
   border: none
   color: white
@@ -161,25 +134,28 @@ textarea
   font-family: Gotham, sans-serif
   font-size: 11pt
 
-.bttn_submit_center
+.center
   text-align: center
   margin-top: 200px
   margin-bottom: 60px
 
-.footer_delimiter
+.footer__delimiter
   height: 2px
   background-color: #dcdcdc
 
 
-.footer_footer
+.footer__social
   padding-top: 50px
   text-align: center
   font-family: GothamLight, sans-serif
 
-.footer_footer
+.footer__social
   a
     color: #a70c5d
 
+.footer__callus a
+  text-decoration: none
+  color: #3f4147
 
 .wrapper_social
   width: 230px
