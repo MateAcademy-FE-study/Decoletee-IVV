@@ -1,59 +1,68 @@
 @font-face {
-  font-family: 'Gotham';
-  src: url('../../fonts/gotham.otf'); }
+  font-family: "Gotham";
+  src: url("../fonts/gotham.otf"); }
 
 @font-face {
-  font-family: 'GothamBold';
-  src: url('../../fonts/GothamBold.otf'); }
+  font-family: "Gotham Bold";
+  src: url("../fonts/Gotham Bold.otf"); }
 
 @font-face {
-  font-family: 'GothamRegular';
-  src: url('../../fonts/gothamregular.ttf'); }
+  font-family: "GothamRegular";
+  src: url("../fonts/gothamregular.ttf"); }
 
 @font-face {
-  font-family: 'GothamLight';
-  src: url('../../fonts/githamlight.ttf'); }
-  
+  font-family: "GothamLight";
+  src: url("../fonts/githamlight.ttf"); }
+
 .header, .content {
   background: #f5f5f5; }
+  .header img, .content img {
+    pointer-events: none;
+    user-select: none; }
 
 .header nav {
   background-color: #f5f5f5;
   padding-top: 20px; }
   .header nav .nav-item {
     font-size: 14px;
-    font-family: 'GothamRegular';
+    font-family: "GothamRegular";
     text-transform: uppercase;
-    color: #808080;
-    padding-right: 2rem !important; }
+    color: #292929;
+    padding-right: 2rem !important;
+    font-weight: bold; }
     .header nav .nav-item:hover {
       color: #a70c5d !important;
-      font-weight: bold; }
+      font-weight: bolder; }
     .header nav .nav-item:last-of-type {
       margin-right: 8rem; }
   .header nav form {
     position: relative; }
     .header nav form .form-group {
       margin-bottom: 0;
-      width: 70px;
-      height: 30px; }
+      width: 65px;
+      height: 32px; }
       .header nav form .form-group:after {
         content: "";
         display: block;
-        width: 15px;
-        height: 15px;
+        width: 17px;
+        height: 17px;
         background: #dddbdb;
         border-radius: 50%;
-        top: 8px;
+        top: 9px;
         position: absolute;
-        left: 4px; }
+        left: 10px; }
       .header nav form .form-group .custom-select {
-        border-radius: 14px;
-        border: 1.5px solid #dddbdb;
+        border-radius: 30px;
+        border: 2px solid #dddbdb;
         text-transform: uppercase;
         color: #a70c5d;
         font-weight: bold;
-        padding-left: 20px; }
+        font-family: "Gotham\ Bold";
+        padding-left: 32px;
+        padding-right: 0;
+        padding-top: 5px;
+        height: 35px;
+        background: none; }
         .header nav form .form-group .custom-select option {
           font-size: 12px;
           text-transform: uppercase;
@@ -61,10 +70,10 @@
           padding-left: 20px; }
 
 .content .content__info h1 {
-  font-family: 'GothamBold';
   font-size: 30px;
   font-weight: bolder;
-  margin-top: 80px; }
+  margin-top: 80px;
+  color: #454545; }
   .content .content__info h1:after {
     content: "";
     width: 40px;
@@ -74,22 +83,26 @@
     margin: 30px 0; }
 
 .content .content__info p {
-  font-family: 'GothamRegular';
-  font-size: 15px;
-  padding-right: 90px; }
+  font-family: "GothamLight";
+  font-size: 1rem;
+  padding-right: 60px; }
 
 .content .content__info p:last-of-type {
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 0; }
 
 .content .content__info button {
   width: 180px;
   height: 50px;
   margin-top: 50px;
+  margin-bottom: 20px;
   border-radius: 30px;
   background-color: #a70c5d;
   color: #fff;
   text-transform: uppercase;
   font-size: 11px;
+  padding-left: 15px;
+  font-weight: bold;
   position: relative; }
   .content .content__info button:focus, .content .content__info button:active {
     outline: none !important; }
@@ -101,7 +114,7 @@
     background: url(../img/arrow.png);
     position: absolute;
     top: 13px;
-    left: 10px;
+    left: 15px;
     transform: rotate(180deg); }
 
 .content .content__person {
@@ -119,5 +132,4 @@
     border-radius: 50%;
     position: absolute;
     top: 40%;
-    left: -60px;
-    border: 1px solid #bfbcbc; }
+    left: -60px; }
