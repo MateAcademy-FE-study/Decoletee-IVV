@@ -1,20 +1,25 @@
 @font-face {
-    font-family: Gotham;
-    src: url(../../fonts/gotham.otf); }
+    font-family: "Gotham";
+    src: url("../fonts/gotham.otf"); }
 
 @font-face {
-    font-family: GothamBold;
-    src: url(../../fonts/GothamBold.otf); }
+    font-family: "Gotham Bold";
+    src: url('../fonts/Gotham\ Bold.otf'); }
 
 @font-face {
-    font-family: GothamRegular;
-    src: url(../../fonts/gothamregular.ttf); }
+    font-family:"GothamRegular";
+    src: url("../fonts/gothamregular.ttf"); }
   
 @font-face {
-    font-family: GothamLight;
-    src: url(../../fonts/githamlight.ttf); }
+    font-family: "GothamLight";
+    src: url("../fonts/githamlight.ttf"); }
 
-.header, .content{background: #f5f5f5;}
+.header, .content{
+    background: #f5f5f5;
+    img { 
+        pointer-events: none;
+        user-select: none;}
+}
 
 .header {
     nav {
@@ -23,12 +28,13 @@
 
         .nav-item {
             font-size: 14px;
-            font-family: GothamRegular;
+            font-family: "GothamRegular";
             text-transform: uppercase;
-            color:#808080;
+            color:#292929;
             padding-right: 2rem !important;
+            font-weight: bold;
     
-            &:hover {color:#a70c5d !important; font-weight: bold;}
+            &:hover {color:#a70c5d !important; font-weight: bolder;}
 
             &:last-of-type{margin-right: 8rem;}
         }
@@ -36,29 +42,34 @@
             position: relative;
             .form-group {
                 margin-bottom: 0;
-                width: 70px;
-                height: 30px;
+                width: 65px;
+                height: 32px;
 
                 
                 &:after {
                     content: "";
                     display: block;
-                    width: 15px;
-                    height: 15px;
+                    width: 17px;
+                    height: 17px;
                     background: #dddbdb;
                     border-radius: 50%;
-                    top: 8px;
+                    top: 9px;
                     position: absolute;
-                    left: 4px;
+                    left: 10px;
                 }
 
                 .custom-select{
-                    border-radius: 14px;
-                    border: 1.5px solid #dddbdb;
+                    border-radius: 30px;
+                    border: 2px solid #dddbdb;
                     text-transform: uppercase;
                     color: #a70c5d;
                     font-weight: bold;
-                    padding-left: 20px;
+                    font-family: "Gotham\ Bold";
+                    padding-left: 32px;
+                    padding-right: 0;
+                    padding-top: 5px;
+                    height: 35px;
+                    background: none;
 
                     option {
                         font-size: 12px;
@@ -75,10 +86,11 @@
 .content {
     .content__info {
       h1 {
-        font-family: GothamBold;
+        // font-family: "Gotham Bold";
         font-size: 30px;
         font-weight: bolder;
         margin-top: 80px;
+        color: #454545;
 
         &:after {
             content:"";
@@ -91,21 +103,25 @@
         }
 
       p { 
-        font-family: GothamRegular;
-        font-size: 15px;
-        padding-right: 90px;
+        font-family: "GothamLight";
+        font-size: 1rem;
+        padding-right: 60px;
         }
-      p:last-of-type {margin-top: 40px;}
+
+      p:last-of-type {margin-top: 40px; margin-bottom: 0;}
 
       button {
           width: 180px;
           height: 50px;
           margin-top: 50px;
+          margin-bottom: 20px;
           border-radius: 30px;
           background-color: #a70c5d;
           color: #fff;
           text-transform: uppercase;
           font-size: 11px;
+          padding-left: 15px;
+          font-weight: bold;
           position: relative;
 
           &:focus, &:active {
@@ -120,7 +136,7 @@
               background: url(../img/arrow.png);
               position: absolute;
               top: 13px;
-              left: 10px;
+              left: 15px;
               transform: rotate(180deg);
           }
       }  
@@ -143,7 +159,7 @@
             position: absolute;
             top: 40%;
             left: -60px;
-            border: 1px solid #bfbcbc;
+            // border: 1px solid #bfbcbc;
         }
     }
     
