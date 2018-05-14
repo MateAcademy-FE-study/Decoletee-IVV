@@ -14,6 +14,10 @@
   font-family: "GothamLight";
   src: url("../fonts/githamlight.ttf"); }
 
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamProRegular.ttf"); }
+
 .header, .content {
   background: #f5f5f5; }
   .header img, .content img {
@@ -24,14 +28,14 @@
   background-color: #f5f5f5;
   padding-top: 20px; }
   .header nav .nav-item {
-    font-size: 14px;
-    font-family: "GothamRegular";
+    font-size: 15px;
+    font-family: "GothamPro";
     text-transform: uppercase;
     color: #292929;
     padding-right: 2rem !important;
-    font-weight: bold; }
+    font-weight: bolder; }
     .header nav .nav-item:hover {
-      color: #a70c5d !important;
+      color: #c51b74 !important;
       font-weight: bolder; }
     .header nav .nav-item:last-of-type {
       margin-right: 8rem; }
@@ -86,6 +90,10 @@
   font-family: "GothamLight";
   font-size: 1rem;
   padding-right: 60px; }
+
+  .content .content__info p b {
+    font-family: "Gotham";
+  }
 
 .content .content__info p:last-of-type {
   margin-top: 40px;
