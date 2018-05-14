@@ -30,7 +30,10 @@
   margin-top: 10px; }
 
 .form__input {
+  margin: 0 auto;
+  margin-right: 10px;
   width: 100%;
+  max-width: 380px;
   text-align: right; }
 
 .client__select {
@@ -74,8 +77,11 @@
   margin-bottom: 10px;
 }
 .form__textarea{
+  margin: 0 auto;
+  margin-left: 10px;
   padding-top: 16px;
   width: 100%;
+  max-width: 380px;
   text-align: left;
 }
 
@@ -203,4 +209,27 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .form-item__textarea {
-    margin-top: 50px; } }
+    margin-top: 50px; } 
+  .center{
+    margin-top: 50px;
+  }
+  .selectric-label {
+    font-size: 12px;
+  } 
+  .form__textarea{
+    padding-top: 16px;
+    text-align: left;
+    margin: 20px auto 0 auto; 
+    max-width: 100%;
+
+  }
+  .form__input {
+    max-width: 100%;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 992px) {
+  .selectric-label {
+    font-size: 13px;
+  } 
+}
