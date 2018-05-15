@@ -79,18 +79,9 @@
       width-font-family: "GothamRegular";
       width-font-size: 15px; }
   .services__content {
-    padding: 60px 60px 0 120px;
-    display: -webkit-inline-flex;
-    display: -moz-inline-flex;
-    display: -ms-inline-flex;
-    display: -o-inline-flex;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex; }
-  .services__block {
-    width: 50%; }
-    .services__block:hover {
-      cursor: pointer; }
+    padding-top: 60px; }
+  .services__block:hover {
+    cursor: pointer; }
   .services__img {
     width: 36px;
     height: 36px;
@@ -98,41 +89,44 @@
     .services__img:hover {
       cursor: pointer; }
 
-.block__title {
-  float: left;
-  padding-left: 30px;
-  font-family: "Gotham";
-  text-transform: uppercase;
-  color: #3f4147;
-  font-size: 15px;
-  line-height: 20px;
-  width: 315px; }
-
-.block__info {
-  float: left;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #ae206a;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
-  font-family: "BanderaPro"; }
-
-.block__text {
-  padding: 0 0 50px 70px;
-  width: 70%;
-  float: left;
-  font-family: "GothamLight"; }
-
-.block__parag {
-  list-style: none; }
-  .block__parag:before {
-    content: "o";
-    padding-right: 10px;
-    font-weight: bold;
-    color: #ae206a;
-    font-family: "Gotham"; }
+.block {
+  fisplay: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .block__title {
+    padding-left: 30px;
+    font-family: "Gotham";
+    text-transform: uppercase;
+    color: #3f4147;
+    font-size: 15px;
+    display: inline;
+    float: left;
+    width: 80%; }
+  .block__info {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ae206a;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-align: center;
+    font-family: "BanderaPro";
+    float: right;
+    margin-left: 20px; }
+  .block__text {
+    padding: 0 0 50px 70px;
+    float: left;
+    font-family: "GothamLight"; }
+  .block__parag {
+    list-style: none; }
+    .block__parag:before {
+      content: "o";
+      padding-right: 10px;
+      font-weight: bold;
+      color: #ae206a;
+      font-family: "Gotham"; }
 
 .services__block:hover .svg__st {
   stroke: #a81060; }
@@ -293,7 +287,8 @@
   -webkit-border-radius: 50%;
           border-radius: 50%;
   padding: 5px;
-  margin-left: 20%; }
+  float: left;
+  margin-right: 20px; }
 
 .img__quotes {
   width: 20px;
@@ -333,3 +328,19 @@
 
 .reviews__subtitle b {
   color: #000000; }
+
+@media screen and (max-width: 960px) {
+  .services__content {
+    padding-top: 30px; }
+  .services__img {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px; }
+  .block__title {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center; }
+  .img__info {
+    display: none; } }

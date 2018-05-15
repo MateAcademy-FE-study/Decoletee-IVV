@@ -22,6 +22,7 @@
     font-family: 'MyraidPro'
     src: url('../fonts/MyriadProRegular.otf')
 
+
 .services
 	width: 100%
 	background: #ffffff
@@ -64,14 +65,8 @@
 	   font-family: "GothamRegular"
 	   font-size: 15px
 	&__content
-		padding: 60px 60px 0 120px
-		display: -webkit-inline-flex
-		display: -moz-inline-flex
-		display: -ms-inline-flex
-		display: -o-inline-flex
-		display: inline-flex
+		padding-top: 60px
 	&__block
-		width: 50%
 		&:hover
 			cursor: pointer
 	&__img
@@ -82,29 +77,29 @@
 			cursor: pointer
 
 .block
+	fisplay: flex
+	justify-content: space-between
 	&__title
-		float: left
 		padding-left: 30px
 		font-family: "Gotham"
 		text-transform: uppercase
 		color: #3f4147
 		font-size: 15px
-		line-height: 20px
-		width: 315px
-		&:after
-
-	&__info
+		display: inline
 		float: left
+		width: 80%
+	&__info
+		display: inline
 		width: 30px
 		height: 30px
 		border: 2px solid #ae206a
 		border-radius: 50%
 		text-align: center
-		line-height: 30px
-		font-family: "BanderaPro"		
+		font-family: "BanderaPro"
+		float: right
+		margin-left: 20px	
 	&__text
 		padding: 0 0 50px 70px
-		width: 70%
 		float: left
 		font-family: "GothamLight"
 	&__parag
@@ -252,7 +247,8 @@
 		border: 2px solid #ae206a
 		border-radius: 50%
 		padding: 5px
-		margin-left: 20%
+		float: left
+		margin-right: 20px
 	&__quotes
 		width: 20px
 		padding-bottom: 20px
@@ -287,3 +283,22 @@
 
 .reviews__subtitle b
     color:#000000
+
+
+@media screen and (max-width: 960px)
+	.services__content
+		padding-top: 30px
+	.services__img
+		display: block
+		width: 100%
+		height: 50px
+		margin-bottom: 15px
+	.block__title
+		display: block
+		width: 100%
+		padding: 0
+		text-align: center
+	.block__text
+	.block__parag
+	.img__info
+		display: none
