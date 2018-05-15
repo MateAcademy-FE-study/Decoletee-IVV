@@ -188,9 +188,13 @@
 		display: flex
 		align-items: center
 		justify-content: center
-		height: 148px
 		line-height: 60px
-
+		margin: 44px 0;
+		&:hover
+			cursor: pointer
+		&:hover .img__reload
+			animation: 1s linear 0s normal none infinite running reload
+			-webkit-animation: 1s linear 0s normal none infinite running reload
 .author
 	&__name
 		font-family: "GothamLight"
@@ -239,6 +243,7 @@
 	display: inline-block
 	font-size: 11px
 	margin: 0
+	padding-left: 10px
 
 .img
 	&__info
@@ -259,7 +264,22 @@
 		height: 20px
 		line-height: 60px
 		vertical-align: middle
-		padding-right: 10px
+		&:hover
+			animation: 1s linear 0s normal none infinite running reload
+			-webkit-animation: 1s linear 0s normal none infinite running reload
+
+@keyframes reload
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+@-webkit-keyframes reload
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
 
 .services__subtitle b
     color:#000000

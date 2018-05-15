@@ -225,9 +225,13 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /*height: 148px;*/
-    margin: 44px 0;
-    line-height: 60px; }
+    line-height: 60px;
+    margin: 44px 0; }
+    .reviews__footer:hover {
+      cursor: pointer; }
+    .reviews__footer:hover .img__reload {
+      animation: 1s linear 0s normal none infinite running reload;
+      -webkit-animation: 1s linear 0s normal none infinite running reload; }
 
 .author__name {
   font-family: "GothamLight";
@@ -275,16 +279,12 @@
 
 .reload__text {
   line-height: 60px;
-  padding-left: 10px;
   text-transform: uppercase;
   font-family: "Gotham";
   display: inline-block;
   font-size: 11px;
-  margin: 0; }
-
-.reload__text:hover {
-  cursor: pointer;
-}
+  margin: 0;
+  padding-left: 10px; }
 
 .img__info {
   width: 30px;
@@ -307,29 +307,26 @@
 .img__reload {
   height: 20px;
   line-height: 60px;
-  vertical-align: middle;
-}
-.img__reload:hover, .reviews__footer:hover .img__reload {
-  animation: 1s linear 0s normal infinite running reload;
-  -webkit-animation: 1s linear 0s normal infinite running reload;
-}
+  vertical-align: middle; }
+  .img__reload:hover {
+    animation: 1s linear 0s normal none infinite running reload;
+    -webkit-animation: 1s linear 0s normal none infinite running reload; }
 
 @keyframes reload {
   0% {
-    transform: rotate(0deg);
-  }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
   100% {
-    transform: rotate(360deg);
-  }
-}
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
 @-webkit-keyframes reload {
   0% {
-    transform: rotate(0deg);
-  }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
   100% {
-    transform: rotate(360deg);
-  }
-}
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 
 .services__subtitle b {
   color: #000000; }
