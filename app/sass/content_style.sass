@@ -22,6 +22,7 @@
     font-family: 'MyraidPro'
     src: url('../fonts/MyriadProRegular.otf')
 
+
 .services
 	width: 100%
 	background: #ffffff
@@ -41,7 +42,7 @@
 		border-bottom: 1px solid #f4f4f4
 	&__title
 	   margin: 0
-	   width: 100%
+	   width: 80%
 	   font-weight: bold
 	   line-height: 1.333
 	   text-align: center
@@ -58,20 +59,14 @@
 	   	background: #a70c5d
 	   	margin: 20px auto
 	&__subtitle
-		width: 100%
+		width: 80%
 	   margin: 0
 	   color: #3f4147
 	   font-family: "GothamRegular"
 	   font-size: 15px
 	&__content
-		padding: 60px 60px 0 120px
-		display: -webkit-inline-flex
-		display: -moz-inline-flex
-		display: -ms-inline-flex
-		display: -o-inline-flex
-		display: inline-flex
+		padding-top: 60px
 	&__block
-		width: 50%
 		&:hover
 			cursor: pointer
 	&__img
@@ -82,29 +77,29 @@
 			cursor: pointer
 
 .block
+	fisplay: flex
+	justify-content: space-between
 	&__title
-		float: left
 		padding-left: 30px
 		font-family: "Gotham"
 		text-transform: uppercase
 		color: #3f4147
 		font-size: 15px
-		line-height: 20px
-		width: 315px
-		&:after
-
-	&__info
+		display: inline
 		float: left
+		width: 80%
+	&__info
+		display: inline
 		width: 30px
 		height: 30px
 		border: 2px solid #ae206a
 		border-radius: 50%
 		text-align: center
-		line-height: 30px
-		font-family: "BanderaPro"		
+		font-family: "BanderaPro"
+		float: right
+		margin-left: 20px	
 	&__text
 		padding: 0 0 50px 70px
-		width: 70%
 		float: left
 		font-family: "GothamLight"
 	&__parag
@@ -164,21 +159,16 @@
 		display: -ms-flex
 		display: -o-flex
 		display: flex
-		padding: 80px 80px 0 80px
-	&__block--text
-		width: 33.3%
-	&__block--video
-		width: 33.3%
+		padding-top: 80px
 	&__text
-		width: 80%
 		font-family: "GothamLight"
 		margin: 0
 		font-size: 17px
 		line-height: 1.471
 		padding-bottom: 40px
 	&__video
-		width: 80%
 		height: 200px
+		width: 300px
 		display: block
 	&__footer
 		display: -webkit-flex
@@ -188,9 +178,13 @@
 		display: flex
 		align-items: center
 		justify-content: center
-		height: 148px
 		line-height: 60px
-
+		margin: 44px 0;
+		&:hover
+			cursor: pointer
+		&:hover .img__reload
+			animation: 1s linear 0s normal none infinite running reload
+			-webkit-animation: 1s linear 0s normal none infinite running reload
 .author
 	&__name
 		font-family: "GothamLight"
@@ -239,6 +233,7 @@
 	display: inline-block
 	font-size: 11px
 	margin: 0
+	padding-left: 10px
 
 .img
 	&__info
@@ -247,7 +242,8 @@
 		border: 2px solid #ae206a
 		border-radius: 50%
 		padding: 5px
-		margin-left: 20%
+		float: left
+		margin-right: 20px
 	&__quotes
 		width: 20px
 		padding-bottom: 20px
@@ -259,7 +255,22 @@
 		height: 20px
 		line-height: 60px
 		vertical-align: middle
-		padding-right: 10px
+		&:hover
+			animation: 1s linear 0s normal none infinite running reload
+			-webkit-animation: 1s linear 0s normal none infinite running reload
+
+@keyframes reload
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+@-webkit-keyframes reload
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
 
 .services__subtitle b
     color:#000000
@@ -267,3 +278,50 @@
 
 .reviews__subtitle b
     color:#000000
+
+
+@media screen and (max-width: 960px)
+	.services__content
+		padding-top: 30px
+	.services__img
+		display: block
+		width: 100%
+		height: 50px
+		margin-bottom: 15px
+	.block__title
+		display: block
+		width: 100%
+		padding: 0
+		text-align: center
+	.block__text
+		padding: 0
+	.block__parag
+	.img__info
+		display: none
+	.img__quotes
+		margin: 0 auto
+		width: 100%
+		height: 50px
+	.reviews__text
+		text-align: center
+	.img__author
+		margin: 0 auto
+		display: block
+	.author__name
+		text-align: center
+	.author__post
+		display: block
+		text-align: center
+		float: none
+	.author__post:after
+		content: ""
+	.author__comp
+		display: block
+		text-align: center
+		float: none
+		margin-bottom: 20px
+	.img__youtube
+		margin: 0 auto
+		display: block
+	.reviews__video
+		margin: 0 auto
