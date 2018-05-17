@@ -126,7 +126,11 @@
   font-family: "GothamLight"; }
 
 .block__parag {
-  list-style: none; }
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .block__parag:before {
     content: "o";
     padding-right: 10px;
@@ -195,6 +199,8 @@
     display: -ms-flexbox;
     display: flex;
     padding-top: 80px; }
+  .reviews__block--text {
+    padding-right: 80px; }
   .reviews__text {
     font-family: "GothamLight";
     margin: 0;
