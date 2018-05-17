@@ -24,7 +24,8 @@
 
 
 .services
-	width: 100%
+	max-width: 1080px
+	margin: 0 auto
 	background: #ffffff
 	border-bottom: 2px solid #f4f4f4
 	&>header
@@ -66,7 +67,10 @@
 	   font-size: 15px
 	&__content
 		padding-top: 60px
+		display: flex
+		align-content: center
 	&__block
+		width: 50%
 		&:hover
 			cursor: pointer
 	&__img
@@ -77,8 +81,6 @@
 			cursor: pointer
 
 .block
-	fisplay: flex
-	justify-content: space-between
 	&__title
 		padding-left: 30px
 		font-family: "Gotham"
@@ -86,17 +88,16 @@
 		color: #3f4147
 		font-size: 15px
 		display: inline
+		width: 70%
 		float: left
-		width: 80%
 	&__info
-		display: inline
+		display: inline-block
 		width: 30px
 		height: 30px
 		border: 2px solid #ae206a
 		border-radius: 50%
 		text-align: center
 		font-family: "BanderaPro"
-		float: right
 		margin-left: 20px	
 	&__text
 		padding: 0 0 50px 70px
@@ -121,7 +122,8 @@
 			stroke: #FFFFFF
 
 .reviews
-	width: 100%
+	max-width: 1080px
+	margin: 0 auto
 	background: #ffffff
 	border-bottom: 2px solid #f4f4f4
 	&>header
@@ -280,9 +282,13 @@
     color:#000000
 
 
-@media screen and (max-width: 960px)
+@media screen and (max-width: 1080px)
 	.services__content
-		padding-top: 30px
+		padding: 30px 40px 0 40px
+		flex-direction: column
+	.services__block
+		display: block
+		width: 100%
 	.services__img
 		display: block
 		width: 100%
@@ -294,10 +300,12 @@
 		padding: 0
 		text-align: center
 	.block__text
-		padding: 0
 	.block__parag
 	.img__info
 		display: none
+	.reviews__content
+		flex-direction: column
+		padding: 80px 50px 0 50px	
 	.img__quotes
 		margin: 0 auto
 		width: 100%
