@@ -12,16 +12,16 @@
     crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 
 
   <link rel="stylesheet" href="css/selectric.css">
-  <link rel="stylesheet" href="css/new_header.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/content_style.css">
   <link rel="stylesheet" href="css/footer_style.css">
   <script src="jquery.selectric.min.js"></script>
@@ -31,58 +31,44 @@
   <div class="wrapper">
     <div class="welcome-page">
       <header class="header">
-        <div class="container">
-          <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light  col-12">
-              <a class="navbar-brand" href="#">
-                <img src="img/logo.svg" alt="logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-item nav-link" href="#">Услуги и цены</a>
-                  <a class="nav-item nav-link" href="#">Отзывы</a>
-                  <a class="nav-item nav-link" href="#">Контакты</a>
-                </div>
-                <form action="">
+         <div class="container">
+             <a href="#" class="brand">
+                  <img src="img/logo.svg" alt="logo">
+              </a> 
+              <nav>
+                  <a class="nav-link" href="#">Услуги и цены</a>
+                  <a class="nav-link" href="#">Отзывы</a>
+                  <a class="nav-link" href="#">Контакты</a> 
+              </nav>
+              <form action="">
                   <div class="form-group">
-                    <select class="custom-select custom-select-sm">
-                      <option selected>RU</option>
-                      <option>EN</option>
-                      <option>ES</option>
-                      <option>TR</option>
-                      <option>CN</option>
-                    </select>
+                      <select>
+                          <option selected>RU</option>
+                          <option>EN</option>
+                          <option>ES</option>
+                          <option>TR</option>
+                          <option>CN</option>
+                      </select>
                   </div>
-                </form>
-              </div>
-            </nav>
-          </div>
-        </div>
+              </form>
+         </div>
       </header>
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="content__info col-lg-6 col-md-12">
-              <h1>Правовое
-                <br> сопровождение
-                <br> малого ИТ-бизнеса </h1>
-              <p>Зачастую интернет-проекты, разработчики, маркетологи, дизайнеры, стартаперы и другие IT-специалисты не уделяют
-                должного внимания правовым аспектам своей деятельности.</p>
-              <p>Но
-                <b>документы должны быть в порядке</b>, и мы в этом поможем.</p>
-              <button class="btn_price">Услуги и цены</button>
-            </div>
-            <div class="content__person col-lg-6 d-none d-lg-block">
-              <img src="img/person.png" alt="image with man">
-            </div>
+      <section class="content">
+          <div class="container">
+              <div class="container__left">
+                  <h1>Правовое
+                      <br> сопровождение
+                      <br> малого ИТ-бизнеса </h1>
+                  <p>Зачастую интернет-проекты, разработчики, маркетологи, дизайнеры, стартаперы и другие IT-специалисты не уделяют должного внимания правовым аспектам своей деятельности.</p>
+                  <p>Но <b>документы должны быть в порядке</b>, и мы в этом поможем.</p>
+                  <button class="btn_price">Услуги и цены</button>
+              </div>
+              <div class="container__right">
+                  <img src="img/person.png" alt="image with man">
+              </div>
           </div>
-        </div>
-      </div>
-    </div>
+      </section>
+  </div>
 
       <section id="services" class="services">
         <header>
