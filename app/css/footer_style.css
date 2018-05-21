@@ -102,10 +102,9 @@
 textarea {
   resize: none;
   width: 100%;
-  height: 235px;
+  height: 249px;
   border-color: #dcdcdc;
-  padding: 10px;
-  font-family: GothamRegular, sans-serif;
+  font-family: Gotham, sans-serif;
   -webkit-transition: border 0.5s;
   -o-transition: border 0.5s;
   transition: border 0.5s; }
@@ -113,18 +112,28 @@ textarea {
     outline: none;
     border: 1px solid #a70c5d; }
   textarea::-webkit-input-placeholder {
+    padding-top: 10px;
+    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px; }
   textarea::-moz-placeholder {
+    padding-top: 10px;
+    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px;  }
   textarea:-ms-input-placeholder {
+    padding-top: 10px;
+    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px;  }
   textarea::-ms-input-placeholder {
+    padding-top: 10px;
+    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px;  }
   textarea::placeholder {
+    padding-top: 10px;
+    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px;  }
 
