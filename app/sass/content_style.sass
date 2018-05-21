@@ -24,11 +24,16 @@
 
 
 .services
-	max-width: 1080px
-	margin: 0 auto
 	background: #ffffff
 	border-bottom: 2px solid #f4f4f4
+	.services__container
+		padding: 60px 0
+		width: 100%
+		margin: 0
+		border-bottom: 1px solid #f4f4f4
 	&>header
+		max-width: 1080px
+		margin: 0 auto
 		display: -webkit-flex
 		display: -moz-flex
 		display: -ms-flex
@@ -37,13 +42,11 @@
 		align-content: center
 		align-items: center
 		text-align: center
-		padding: 60px 0
 		flex-direction: column
 		justify-content: center
-		border-bottom: 1px solid #f4f4f4
 	&__title
 	   margin: 0
-	   width: 80%
+	   text-align: center
 	   font-weight: bold
 	   line-height: 1.333
 	   text-align: center
@@ -60,15 +63,17 @@
 	   	background: #a70c5d
 	   	margin: 20px auto
 	&__subtitle
-		width: 80%
-	   margin: 0
-	   color: #3f4147
-	   font-family: "GothamRegular"
-	   font-size: 15px
+		text-align: center
+		margin: 0
+	   	color: #3f4147
+	   	font-family: "GothamRegular"
+	   	font-size: 15px
 	&__content
 		padding-top: 60px
 		display: flex
 		align-content: center
+		max-width: 1080px
+		margin: 0 auto
 	&__block
 		width: 50%
 		&:hover
@@ -123,10 +128,13 @@
 			stroke: #FFFFFF
 
 .reviews
-	max-width: 1080px
-	margin: 0 auto
 	background: #ffffff
 	border-bottom: 2px solid #f4f4f4
+	.reviews__container
+		padding: 60px 0
+		width: 100%
+		margin: 0
+		border-bottom: 1px solid #f4f4f4
 	&>header
 		display: -webkit-flex
 		display: -moz-flex
@@ -137,6 +145,8 @@
 		text-align: center
 		padding: 60px 0 0 0
 		justify-content: center
+		max-width: 1080px
+		margin: 0 auto
 	&__title
 		font-weight: bold
 		margin: 0
@@ -152,8 +162,7 @@
 			background: #a70c5d
 			margin: 20px auto
 	&__subtitle
-		margin: 0
-		padding: 0 27%
+		text-align: center
 		color: #3f4147
 		font-family: "GothamLight"
 	&__content
@@ -163,6 +172,8 @@
 		display: -o-flex
 		display: flex
 		padding-top: 80px
+		max-width: 1080px
+		margin: 0 auto
 	&__block--text
 		padding-right: 80px
 	&__text
