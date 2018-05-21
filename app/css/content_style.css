@@ -24,11 +24,16 @@
   src: url("../fonts/MyriadProRegular.otf"); }
 
 .services {
-  max-width: 1080px;
-  margin: 0 auto;
   background: #ffffff;
   border-bottom: 2px solid #f4f4f4; }
+  .services .services__container {
+    padding: 60px 0;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #f4f4f4; }
   .services > header {
+    max-width: 1080px;
+    margin: 0 auto;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -44,7 +49,6 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    padding: 60px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -53,11 +57,10 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    border-bottom: 1px solid #f4f4f4; }
+            justify-content: center; }
   .services__title {
     margin: 0;
-    width: 80%;
+    text-align: center;
     font-weight: bold;
     line-height: 1.333;
     text-align: center;
@@ -74,11 +77,11 @@
       background: #a70c5d;
       margin: 20px auto; }
   .services__subtitle {
-    width: 80%;
-      width-margin: 0;
-      width-color: #3f4147;
-      width-font-family: "GothamRegular";
-      width-font-size: 15px; }
+    text-align: center;
+    margin: 0;
+      margin-color: #3f4147;
+      margin-font-family: "GothamRegular";
+      margin-font-size: 15px; }
   .services__content {
     padding-top: 60px;
     display: -webkit-box;
@@ -87,7 +90,9 @@
     display: flex;
     -webkit-align-content: center;
         -ms-flex-line-pack: center;
-            align-content: center; }
+            align-content: center;
+    max-width: 1080px;
+    margin: 0 auto; }
   .services__block {
     width: 50%; }
     .services__block:hover {
@@ -148,10 +153,13 @@
     stroke: #FFFFFF; }
 
 .reviews {
-  max-width: 1080px;
-  margin: 0 auto;
   background: #ffffff;
   border-bottom: 2px solid #f4f4f4; }
+  .reviews .reviews__container {
+    padding: 60px 0;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #f4f4f4; }
   .reviews > header {
     display: -webkit-flex;
     display: -moz-flex;
@@ -170,7 +178,9 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    max-width: 1080px;
+    margin: 0 auto; }
   .reviews__title {
     font-weight: bold;
     margin: 0;
@@ -186,8 +196,7 @@
       background: #a70c5d;
       margin: 20px auto; }
   .reviews__subtitle {
-    margin: 0;
-    padding: 0 27%;
+    text-align: center;
     color: #3f4147;
     font-family: "GothamLight"; }
   .reviews__content {
@@ -198,7 +207,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 80px; }
+    padding-top: 80px;
+    max-width: 1080px;
+    margin: 0 auto; }
   .reviews__block--text {
     padding-right: 80px; }
   .reviews__text {

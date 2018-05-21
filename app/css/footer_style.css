@@ -11,8 +11,8 @@
   src: url(../../fonts/githamlight.ttf); }
 
 .footer__head {
-  text-align: center;
   margin-top: 50px;
+  text-align: center;
   font-size: 25px;
   font-family: Gotham, sans-serif;
   color: #3f4147; }
@@ -27,15 +27,24 @@
 .form__wrapper {
   font-family: GothamRegular, sans-serif;
   font-weight: 600;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content:space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 10px; }
 
-.footer__container{
+.footer__container {
   max-width: 800px;
-   margin: auto;
-}
+  margin: auto; }
 
 .form__input {
   width: 48%;
@@ -61,8 +70,9 @@
           transform: rotate(180deg); }
 
 .form__textarea {
+  width: 48%;
+  margin-left: 20px;
   padding-top: 16px;
-  width: 100%;
   text-align: left; }
 
 .form__textarea p {
@@ -216,28 +226,27 @@ textarea {
   margin-top: 80px; }
 
 @media screen and (max-width: 767px) {
-  .center{
-    margin-top: 50px;
-  }
+  .center {
+    margin-top: 50px; }
   .selectric-label {
-    font-size: 12px;
-  } 
-  .form__wrapper{
-    flex-direction: column;
-    justify-content: center;
-  }
-  .form__textarea{
+    font-size: 12px; }
+  .form__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .form__textarea {
     width: 70%;
-    margin: auto;
-  }
-  .form__input{
+    margin: auto; }
+  .form__input {
     width: 70%;
-    margin: auto;
-  }
-}
+    margin: auto; } }
+
 @media screen and (max-width: 992px) {
   .selectric-label {
-    font-size: 12px;
-  } 
-}
-
+    font-size: 12px; } }
