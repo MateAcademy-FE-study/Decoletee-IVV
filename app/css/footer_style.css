@@ -87,7 +87,7 @@
   border-bottom: 2px solid #dcdcdc;
   outline-style: none;
   width: 100%;
-  padding-top:28px;
+  padding-top: 28px;
   padding-bottom: 5px;
   font-family: Gotham, sans-serif;
   font-weight: bold;
@@ -98,20 +98,6 @@
 .form__input input:focus {
   outline: none;
   border-bottom: 2px solid #a70c5d; }
-
-.form__textarea p{
-  font-size: 13px;
-  font-family: Gotham, sans-serif;
-  font-weight: bold;
-  color: #757575;
-  margin-bottom: 10px;
-}
-.form__textarea{
-  width: 48%;
-  margin-left: 20px;
-  padding-top: 10px;
-  text-align: left;
-}
 
 textarea {
   resize: none;
