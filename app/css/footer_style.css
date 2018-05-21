@@ -72,7 +72,7 @@
 .form__textarea {
   width: 48%;
   margin-left: 20px;
-  padding-top: 16px;
+  padding-top: 8px;
   text-align: left; }
 
 .form__textarea p {
@@ -105,8 +105,7 @@ textarea {
   height: 235px;
   border-color: #dcdcdc;
   padding: 10px;
-  font-family: Gotham, sans-serif;
-  font-weight: bold;
+  font-family: GothamRegular, sans-serif;
   -webkit-transition: border 0.5s;
   -o-transition: border 0.5s;
   transition: border 0.5s; }
@@ -115,19 +114,19 @@ textarea {
     border: 1px solid #a70c5d; }
   textarea::-webkit-input-placeholder {
     color: #dcdcdc;
-    font-weight: lighter; }
+    font-size: 15px; }
   textarea::-moz-placeholder {
     color: #dcdcdc;
-    font-weight: lighter; }
+    font-size: 15px;  }
   textarea:-ms-input-placeholder {
     color: #dcdcdc;
-    font-weight: lighter; }
+    font-size: 15px;  }
   textarea::-ms-input-placeholder {
     color: #dcdcdc;
-    font-weight: lighter; }
+    font-size: 15px;  }
   textarea::placeholder {
     color: #dcdcdc;
-    font-weight: lighter; }
+    font-size: 15px;  }
 
 .form__button {
   background-color: #a70c5d;
