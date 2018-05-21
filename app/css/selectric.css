@@ -169,7 +169,6 @@
   .selectric-items li.highlighted {
     color: #444;
     height: 10px;
-    margin-bottom: 10px;
   }
   
   .selectric-items li:hover {
