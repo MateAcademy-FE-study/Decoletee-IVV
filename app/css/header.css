@@ -138,7 +138,7 @@ body {
   padding-left: 20px;
 }
 
-.container {
+.text__container {
   max-width: 1140px;
   margin: 0 auto;
   display: -webkit-box;
@@ -251,8 +251,8 @@ body {
     width: 100%;
     text-align: center;
     position: relative;
-    top: 0;
-    transform: translate(0, 0);
+    top: 50%;
+    transform: translate(0, 15%);
   }
   .welcome-page {
     background-image: none;
@@ -266,5 +266,13 @@ body {
   }
   .container__left::after {
     content: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__left {
+    position: relative;
+    top: 50%;
+    transform: translate(0px, 0%);
   }
 }
