@@ -167,6 +167,7 @@
   }
   
   .selectric-items li.highlighted {
+    margin-bottom: 10px;
     color: #444;
     height: 10px;
   }
