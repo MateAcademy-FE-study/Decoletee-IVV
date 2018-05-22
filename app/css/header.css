@@ -18,17 +18,7 @@
   font-family: "GothamPro";
   src: url("../fonts/GothamProRegular.ttf"); }
 
-@media screen and (max-width: 768px) {
-  .container__left {
-    min-width: 100%;
-    text-align: center; }
-    .container__left h1:after {
-      min-width: 90px;
-      margin: 30px auto !important; }
-  .container__right {
-    display: none; }
-  .container__left::after {
-    content: none; } }
+
 
 body {
   margin: 0;
@@ -40,7 +30,14 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 30px 30px 0 30px;
-  background: #f5f5f5; }
+  background: #f5f5f5; 
+  background-image: url(../img/back.png);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+}
+  
   .welcome-page .header {
     padding-bottom: 30px; }
     .welcome-page .header .container {
@@ -48,19 +45,19 @@ body {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-    .welcome-page .header .brand {
+  .brand {
       -webkit-box-flex: 3;
       -webkit-flex-grow: 3;
           -ms-flex-positive: 3;
               flex-grow: 3; }
-    .welcome-page .header nav {
+    .header nav {
       margin: 0 auto;
       -webkit-box-flex: 3;
       -webkit-flex-grow: 3;
           -ms-flex-positive: 3;
               flex-grow: 3;
       text-align: center; }
-      .welcome-page .header nav .nav-link {
+     .nav-link {
         display: inline-block;
         text-decoration: none;
         text-transform: uppercase;
@@ -68,14 +65,14 @@ body {
         padding-right: 30px;
         font-family: "GothamLight";
         font-weight: 600; }
-        .welcome-page .header nav .nav-link:hover {
+      .nav-link:hover {
           color: #c51b74; }
-    .welcome-page .header form {
+    .header form {
       position: relative; }
-      .welcome-page .header form .form-group {
+      .form-group {
         margin-bottom: 0;
         width: 65px; }
-        .welcome-page .header form .form-group:after {
+       .form-group:after {
           content: "";
           display: block;
           width: 17px;
@@ -86,7 +83,7 @@ body {
           top: 8px;
           position: absolute;
           left: 10px; }
-        .welcome-page .header form .form-group select {
+        .form-group select {
           -webkit-border-radius: 30px;
                   border-radius: 30px;
           border: 2px solid #dddbdb;
@@ -102,52 +99,56 @@ body {
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none; }
-          .welcome-page .header form .form-group select:hover {
+          .form-group select:hover {
             border: 2px solid #a70c5d; }
-          .welcome-page .header form .form-group select option {
+          .form-group select option {
             font-size: 12px;
             text-transform: uppercase;
             color: #808080;
             padding-left: 20px; }
-  .welcome-page .container {
+  .container {
     max-width: 1140px;
     margin: 0 auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    .welcome-page .container .container__left {
+    .container__left {
       width: 50%;
       padding: 30px 0; }
-      .welcome-page .container .container__left h1 {
+     .container__left h1 {
+       margin-top: 80px;
         font-family: "Gotham";
         font-size: 2rem;
         font-weight: 500;
         line-height: 1.4;
         color: #454545; }
-        .welcome-page .container .container__left h1:after {
+      .container__left h1:after {
           content: "";
           width: 40px;
           height: 2px;
           background-color: #a70c5d;
           display: block;
           margin: 30px 0; }
-      .welcome-page .container .container__left p {
-        font-family: "GothamLight";
-        font-size: 1rem;
+      .container__left p {
+        font-family: "GothamPro";
+        font-size: 1.1rem;
         padding-right: 60px;
-        line-height: 1.6; }
+        color: #454545;
+        line-height: 1.7; }
         .welcome-page .container .container__left p b {
           font-family: "Gotham"; }
-      .welcome-page .container .container__left p:last-of-type {
+      .container__left p:last-of-type {
         margin-top: 40px;
         margin-bottom: 0;
         padding-bottom: 40px; }
-      .welcome-page .container .container__left .btn_price {
+      .btn_price {
+        margin: 60px 0; 
         background-color: #a70c5d;
         border: none;
+        font-family: "Gotham";
         color: #fff;
-        padding-left: 15px;
+        padding-left: 20px;
         height: 50px;
         text-align: center;
         text-decoration: none;
@@ -159,7 +160,7 @@ body {
         text-transform: uppercase;
         font-weight: bold;
         position: relative; }
-        .welcome-page .container .container__left .btn_price:after {
+        .btn_price:after {
           content: "";
           width: 22px;
           height: 22px;
@@ -168,20 +169,11 @@ body {
           position: absolute;
           top: 13px;
           left: 15px;
-          -webkit-transform: rotate(180deg);
-              -ms-transform: rotate(180deg);
-                  transform: rotate(180deg); }
-    .welcome-page .container .container__right {
-      width: 50%;
-      padding-left: 2em;
-      padding-top: 22px;
-      position: absolute;
-      bottom: 0;
-      right: 0; }
-      .welcome-page .container .container__right::before {
-        content: "";
-        width: 80px;
-        height: 80px;
+ }
+
+      .play {
+        width: 90px;
+        height: 90px;
         display: block;
         cursor: pointer;
         background: #fff;
@@ -190,10 +182,31 @@ body {
         background-position: center;
         -webkit-border-radius: 50%;
                 border-radius: 50%;
-        position: relative;
-        -webkit-transform: translate(-50%, -50vh);
-            -ms-transform: translate(-50%, -50vh);
-                transform: translate(-50%, -50vh); }
-      .welcome-page .container .container__right img {
-        position: absolute;
-        bottom: 0; }
+                position: absolute;
+                top: 50%;
+                left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+
+@media screen and (max-width: 1080px) {
+  .play{
+    display: none;
+  }
+  .container__left p{
+    padding-right: 0;
+  }
+  .welcome-page{ 
+    background-image: none;
+    }
+  .container__left {
+    min-width: 100%;
+    text-align: center; }
+    .container__left h1:after {
+      min-width: 90px;
+      margin: 30px auto !important; }
+  .container__right {
+    display: none; }
+  .container__left::after {
+    content: none; } }
+
