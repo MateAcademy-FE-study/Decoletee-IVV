@@ -1,28 +1,32 @@
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/gotham.otf"); }
+  src: url("../fonts/gotham.otf");
+}
 
 @font-face {
   font-family: "Gotham\ Bold";
-  src: url("../fonts/Gotham Bold.otf"); }
+  src: url("../fonts/Gotham Bold.otf");
+}
 
 @font-face {
   font-family: "GothamRegular";
-  src: url("../fonts/gothamregular.ttf"); }
+  src: url("../fonts/gothamregular.ttf");
+}
 
 @font-face {
   font-family: "GothamLight";
-  src: url("../fonts/githamlight.ttf"); }
+  src: url("../fonts/githamlight.ttf");
+}
 
 @font-face {
   font-family: "GothamPro";
-  src: url("../fonts/GothamProRegular.ttf"); }
-
-
+  src: url("../fonts/GothamProRegular.ttf");
+}
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .welcome-page {
   min-height: 100vh;
@@ -30,180 +34,237 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 30px 30px 0 30px;
-  background: #f5f5f5; 
+  background: #f5f5f5;
   background-image: url(../img/back.png);
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
-
 }
-  
-  .welcome-page .header {
-    padding-bottom: 30px; }
-    .welcome-page .header .container {
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-  .brand {
-      -webkit-box-flex: 3;
-      -webkit-flex-grow: 3;
-          -ms-flex-positive: 3;
-              flex-grow: 3; }
-    .header nav {
-      margin: 0 auto;
-      -webkit-box-flex: 3;
-      -webkit-flex-grow: 3;
-          -ms-flex-positive: 3;
-              flex-grow: 3;
-      text-align: center; }
-     .nav-link {
-        display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #454545;
-        padding-right: 30px;
-        font-family: "GothamLight";
-        font-weight: 600; }
-      .nav-link:hover {
-          color: #c51b74; }
-    .header form {
-      position: relative; }
-      .form-group {
-        margin-bottom: 0;
-        width: 65px; }
-       .form-group:after {
-          content: "";
-          display: block;
-          width: 17px;
-          height: 17px;
-          background: #dddbdb;
-          -webkit-border-radius: 50%;
-                  border-radius: 50%;
-          top: 8px;
-          position: absolute;
-          left: 10px; }
-        .form-group select {
-          -webkit-border-radius: 30px;
-                  border-radius: 30px;
-          border: 2px solid #dddbdb;
-          text-transform: uppercase;
-          color: #a70c5d;
-          font-family: "Gotham\ Bold";
-          padding-left: 27px;
-          width: 65px;
-          padding-right: 0;
-          padding-top: 2px;
-          height: 32px;
-          background: none;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none; }
-          .form-group select:hover {
-            border: 2px solid #a70c5d; }
-          .form-group select option {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: #808080;
-            padding-left: 20px; }
-  .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    .container__left {
-      width: 50%;
-      padding: 30px 0; }
-     .container__left h1 {
-        font-family: "Gotham";
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 1.4;
-        color: #454545; }
-      .container__left h1:after {
-          content: "";
-          width: 40px;
-          height: 2px;
-          background-color: #a70c5d;
-          display: block;
-          margin: 30px 0; }
-      .container__left p {
-        font-family: "GothamPro";
-        font-size: 1.1rem;
-        padding-right: 60px;
-        color: #454545;
-        line-height: 1.7; }
-        .welcome-page .container .container__left p b {
-          font-family: "Gotham"; }
-      .container__left p:last-of-type {
-        margin-top: 40px;
-        margin-bottom: 0;
-        padding-bottom: 40px; }
-      .btn_price {
-        background-color: #a70c5d;
-        border: none;
-        font-family: "Gotham";
-        color: #fff;
-        padding-left: 20px;
-        height: 50px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        width: 180px;
-        -webkit-border-radius: 30px;
-                border-radius: 30px;
-        font-size: 11px;
-        text-transform: uppercase;
-        font-weight: bold;
-        position: relative; }
-        .btn_price:after {
-          content: "";
-          width: 22px;
-          height: 22px;
-          display: block;
-          background: url(../img/arrow.png);
-          position: absolute;
-          top: 13px;
-          left: 15px;
- }
 
-      .play {
-        width: 90px;
-        height: 90px;
-        display: block;
-        cursor: pointer;
-        background: #fff;
-        background-image: url("../img/btn-play.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        -webkit-border-radius: 50%;
-                border-radius: 50%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%); }
+.welcome-page .header {
+  padding-bottom: 30px;
+}
+
+.welcome-page .header .container {
+  box-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.brand {
+  box-flex: 3;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+  -ms-flex-positive: 3;
+  flex-grow: 3;
+}
+
+.header nav {
+  padding-left: 0;
+  margin: 0 auto;
+  padding-right: 50px;
+  box-flex: 3;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+  -ms-flex-positive: 3;
+  flex-grow: 3;
+  text-align: center;
+}
+
+.nav-dec {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #454545;
+  padding-right: 30px !important;
+  font-family: "GothamLight" !important;
+  font-weight: 600 !important;
+}
+
+.nav-dec:hover {
+  color: #c51b74 !important;
+}
+
+.header form {
+  position: relative;
+}
+
+.form-group {
+  margin-bottom: 0;
+  width: 65px;
+}
+
+.form-group:after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: #dddbdb;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  top: 8px;
+  position: absolute;
+  left: 10px;
+}
+
+.form-group select {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: 2px solid #dddbdb;
+  text-transform: uppercase;
+  color: #a70c5d;
+  font-family: "Gotham\ Bold";
+  padding-left: 27px;
+  width: 65px;
+  padding-right: 0;
+  padding-top: 2px;
+  height: 32px;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-group select:hover {
+  border: 2px solid #a70c5d;
+}
+
+.form-group select option {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #808080;
+  padding-left: 20px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__left {
+  width: 575px;
+  padding: 30px 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -40%);
+}
+
+.container__left h1 {
+  font-family: "Gotham";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #454545;
+}
+
+.container__left h1:after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #a70c5d;
+  display: block;
+  margin: 30px 0;
+}
+
+.container__left p {
+  font-family: "GothamPro";
+  font-size: 1.1rem;
+  padding-right: 60px;
+  color: #454545;
+  line-height: 1.7;
+}
+
+.welcome-page .container .container__left p b {
+  font-family: "Gotham";
+}
+
+.container__left p:last-of-type {
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}
+
+.btn_price {
+  margin-top: 80px;
+  background-color: #a70c5d;
+  border: none;
+  font-family: "Gotham";
+  color: #fff;
+  padding-left: 20px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 180px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+.btn_price:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: block;
+  background: url(../img/arrow.png);
+  position: absolute;
+  top: 13px;
+  left: 15px;
+}
+
+.play {
+  width: 90px;
+  height: 90px;
+  display: block;
+  cursor: pointer;
+  background: #fff;
+  background-image: url("../img/btn-play.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 @media screen and (max-width: 1080px) {
-  .play{
+  .play {
     display: none;
   }
-  .container__left p{
+  .container__left p {
     padding-right: 0;
   }
-  .welcome-page{ 
-    background-image: none;
-    }
   .container__left {
-    min-width: 100%;
-    text-align: center; }
-    .container__left h1:after {
-      min-width: 90px;
-      margin: 30px auto !important; }
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 0;
+    transform: translate(0, 0);
+  }
+  .welcome-page {
+    background-image: none;
+  }
+  .container__left h1:after {
+    min-width: 90px;
+    margin: 30px auto !important;
+  }
   .container__right {
-    display: none; }
+    display: none;
+  }
   .container__left::after {
-    content: none; } }
+    content: none;
+  }
+}
