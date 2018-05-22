@@ -189,15 +189,7 @@ body {
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
 
-@media screen and (max-width: 1250px) {
-  .welcome-page{ 
-  background-image: url(../img/person.png);
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .play{
     display: none;
   }
@@ -217,3 +209,4 @@ body {
     display: none; }
   .container__left::after {
     content: none; } }
+
