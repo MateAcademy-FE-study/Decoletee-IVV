@@ -144,11 +144,18 @@
     font-family: "Gotham"; }
 
 .services__block:hover .svg__st {
-  stroke: #a81060; }
+  stroke: #a81060;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
 
-.services__block:hover.img__info {
-  background: #a81060; }
-  .services__block:hover.img__info.info {
+.services__block:hover .img__info {
+  background-color: #a70c5d;
+  fill: #ffffff;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .services__block:hover .img__info.info {
     fill: #ffffff;
     stroke: #FFFFFF; }
 
@@ -300,12 +307,12 @@
   padding-left: 10px; }
 
 .img__info {
-  width: 30px;
-  height: 30px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #ae206a;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  padding: 5px;
+  padding: 7px;
   float: left;
   margin-right: 20px; }
 
