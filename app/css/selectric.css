@@ -199,6 +199,7 @@
   }
   
   .selectric-button {
+  display: none;
 	opacity: 0;
   }
   .selectric-items ul {
