@@ -22,7 +22,10 @@
   background: #f5f5f5; }
   .header img, .content img {
     pointer-events: none;
-    user-select: none; }
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
 
 .header nav {
   background-color: #f5f5f5;
@@ -51,12 +54,14 @@
         width: 17px;
         height: 17px;
         background: #dddbdb;
-        border-radius: 50%;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
         top: 9px;
         position: absolute;
         left: 10px; }
       .header nav form .form-group .custom-select {
-        border-radius: 30px;
+        -webkit-border-radius: 30px;
+                border-radius: 30px;
         border: 2px solid #dddbdb;
         text-transform: uppercase;
         color: #a70c5d;
@@ -90,10 +95,8 @@
   font-family: "GothamLight";
   font-size: 1rem;
   padding-right: 60px; }
-
   .content .content__info p b {
-    font-family: "Gotham";
-  }
+    font-family: "Gotham"; }
 
 .content .content__info p:last-of-type {
   margin-top: 40px;
@@ -104,7 +107,8 @@
   height: 50px;
   margin-top: 50px;
   margin-bottom: 20px;
-  border-radius: 30px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
   background-color: #a70c5d;
   color: #fff;
   text-transform: uppercase;
@@ -123,7 +127,9 @@
     position: absolute;
     top: 13px;
     left: 15px;
-    transform: rotate(180deg); }
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
 
 .content .content__person {
   padding-left: 2em; }
@@ -137,7 +143,8 @@
     background-image: url("../img/btn-play.png");
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     position: absolute;
     top: 40%;
     left: -60px; }

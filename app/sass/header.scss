@@ -31,6 +31,9 @@
     .container__right {
         display: none;
     }
+    .container__left::after {
+        content: none;
+    }
 }
 
 body{
@@ -38,7 +41,7 @@ body{
     padding: 0;
 }
 .welcome-page {
-    min-height: 100%;
+    min-height: 100vh;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -189,14 +192,11 @@ body{
             width: 50%;
             padding-left: 2em;
             padding-top: 22px;
-            position: relative;
+            position: absolute;
+            bottom: 0;
+            right: 0;
 
-            img {
-                position: absolute;
-                bottom: 0;
-            }
-
-            &:before {
+            &::before {
                 content: "";
                 width: 80px;
                 height: 80px;
@@ -207,9 +207,13 @@ body{
                 background-repeat: no-repeat;
                 background-position: center;
                 border-radius: 50%;
+                position: relative;
+                transform: translate(-50%, -50vh);
+            }
+
+            img {
                 position: absolute;
-                top: 40%;
-                left: -60px;
+                bottom: 0;
             }
         }
     }
