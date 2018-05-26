@@ -586,15 +586,16 @@
     </div>
   </div>
   <script>
-    $('#interest').on('selectric-open', function () {
+    var $select = $('#interest')
+    $select.on('selectric-open', function () {
       var arrow = document.getElementsByClassName("select__arrow")[0];
       arrow.style.transform = "rotate(0deg)"
     }).selectric();
-    $('#interest').on('selectric-close', function () {
+    $select.on('selectric-close', function () {
       var arrow = document.getElementsByClassName("select__arrow")[0];
       arrow.style.transform = "rotate(180deg)"
     }).selectric();
-    $('#interest').selectric({
+    $select.selectric({
       disableOnMobile: false,
       nativeOnMobile: false
     });
