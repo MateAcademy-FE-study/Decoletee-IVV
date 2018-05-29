@@ -29,7 +29,6 @@ body {
 }
 
 .welcome-page {
-  min-height: 100vh;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -253,7 +252,7 @@ body {
     text-align: center;
     position: relative;
     top: 50%;
-    transform: translate(0, 15%);
+    transform: translate(0, 0);
   }
   .welcome-page {
     background-image: none;
@@ -272,8 +271,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .container__left {
+    min-height: 100%;
     position: relative;
-    top: 50%;
+    top: -100px;
     transform: translate(0px, 20%);
   }
   .header nav {
@@ -298,6 +298,9 @@ body {
     position: relative;
     left: -13%;
   }
+  .welcome-page{
+  min-height: 100%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -305,5 +308,10 @@ body {
     position: relative;
     top: 50%;
     transform: translate(0px, 0%);
+  }
+}
+@media screen and (min-width: 1081px) {
+  .welcome-page {
+    min-height: 100vh;
   }
 }
