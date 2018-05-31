@@ -114,21 +114,6 @@ body {
   top: 26px;
 }
 
-.menu__links-item {
-  display: inline-block;
-  color: #333333;
-  font-family: Arial;
-  font-size: 14px;
-  line-height: 30px;
-  padding: 0 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.menu__links-item:hover {
-  text-decoration: underline;
-}
-
 .menu.menu_state_open .menu__icon span:nth-child(1) {
   top: 18px;
   width: 0%;
