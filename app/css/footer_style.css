@@ -114,32 +114,22 @@ textarea {
     border: 1px solid #a70c5d; }
   textarea::-webkit-input-placeholder {
     color: #dcdcdc;
-    padding-top: 10px;
-    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px; }
   textarea::-moz-placeholder {
     color: #dcdcdc;
-    padding-top: 10px;
-    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px; }
   textarea:-ms-input-placeholder {
     color: #dcdcdc;
-    padding-top: 10px;
-    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px; }
   textarea::-ms-input-placeholder {
     color: #dcdcdc;
-    padding-top: 10px;
-    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px; }
   textarea::placeholder {
     color: #dcdcdc;
-    padding-top: 10px;
-    padding-left: 10px;
     color: #dcdcdc;
     font-size: 15px; }
 
