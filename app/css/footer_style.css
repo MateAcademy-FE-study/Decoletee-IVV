@@ -1,34 +1,28 @@
 @font-face {
   font-family: Gotham;
-  src: url(../../fonts/gotham.otf);
-}
+  src: url(../../fonts/gotham.otf); }
 
 @font-face {
   font-family: GothamRegular;
-  src: url(../../fonts/gothamregular.ttf);
-}
+  src: url(../../fonts/gothamregular.ttf); }
 
 @font-face {
   font-family: GothamLight;
-  src: url(../../fonts/githamlight.ttf);
-}
+  src: url(../../fonts/githamlight.ttf); }
 
 .footer__head {
   margin-top: 50px;
   text-align: center;
   font-size: 25px;
   font-family: Gotham, sans-serif;
-  color: #3f4147;
-}
-
-.footer__head:after {
-  content: "";
-  margin: 20px auto;
-  display: block;
-  width: 50px;
-  height: 2px;
-  background: #a70c5d;
-}
+  color: #3f4147; }
+  .footer__head:after {
+    content: "";
+    margin: 20px auto;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #a70c5d; }
 
 .form__wrapper {
   font-family: GothamRegular, sans-serif;
@@ -37,40 +31,32 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  box-orient: horizontal;
   -webkit-box-orient: horizontal;
-  box-direction: normal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 10px;
-}
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px; }
 
 .footer__container {
   max-width: 800px;
-  margin: auto;
-}
+  margin: auto; }
 
 .form__input {
   width: 48%;
   margin-right: 20px;
-  text-align: right;
-}
+  text-align: right; }
 
 .client__select {
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
 .select {
   position: relative;
-  text-align: left;
-}
+  text-align: left; }
 
 .select__arrow {
   position: absolute;
@@ -80,24 +66,21 @@
   width: 22px;
   height: 22px;
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 .form__textarea {
   width: 48%;
   margin-left: 20px;
   padding-top: 20px;
-  text-align: left;
-}
+  text-align: left; }
 
 .form__textarea p {
   font-size: 13px;
   font-family: Gotham, sans-serif;
   font-weight: bold;
   color: #757575;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .form__input input {
   border: none;
@@ -110,13 +93,11 @@
   font-weight: bold;
   -webkit-transition: border-bottom 0.5s;
   -o-transition: border-bottom 0.5s;
-  transition: border-bottom 0.5s;
-}
+  transition: border-bottom 0.5s; }
 
 .form__input input:focus {
   outline: none;
-  border-bottom: 2px solid #a70c5d;
-}
+  border-bottom: 2px solid #a70c5d; }
 
 textarea {
   padding: 10px 15px;
@@ -127,43 +108,30 @@ textarea {
   font-family: Gotham, sans-serif;
   -webkit-transition: border 0.5s;
   -o-transition: border 0.5s;
-  transition: border 0.5s;
-}
-
-textarea:focus {
-  outline: none;
-  border: 1px solid #a70c5d;
-}
-
-textarea::-webkit-input-placeholder {
-  color: #dcdcdc;
-  color: #dcdcdc;
-  font-size: 15px;
-}
-
-textarea::-moz-placeholder {
-  color: #dcdcdc;
-  color: #dcdcdc;
-  font-size: 15px;
-}
-
-textarea:-ms-input-placeholder {
-  color: #dcdcdc;
-  color: #dcdcdc;
-  font-size: 15px;
-}
-
-textarea::-ms-input-placeholder {
-  color: #dcdcdc;
-  color: #dcdcdc;
-  font-size: 15px;
-}
-
-textarea::placeholder {
-  color: #dcdcdc;
-  color: #dcdcdc;
-  font-size: 15px;
-}
+  transition: border 0.5s; }
+  textarea:focus {
+    outline: none;
+    border: 1px solid #a70c5d; }
+  textarea::-webkit-input-placeholder {
+    color: #dcdcdc;
+    color: #dcdcdc;
+    font-size: 15px; }
+  textarea::-moz-placeholder {
+    color: #dcdcdc;
+    color: #dcdcdc;
+    font-size: 15px; }
+  textarea:-ms-input-placeholder {
+    color: #dcdcdc;
+    color: #dcdcdc;
+    font-size: 15px; }
+  textarea::-ms-input-placeholder {
+    color: #dcdcdc;
+    color: #dcdcdc;
+    font-size: 15px; }
+  textarea::placeholder {
+    color: #dcdcdc;
+    color: #dcdcdc;
+    font-size: 15px; }
 
 .form__button {
   background-color: #a70c5d;
@@ -176,48 +144,40 @@ textarea::placeholder {
   cursor: pointer;
   width: 150px;
   -webkit-border-radius: 30px;
-  border-radius: 30px;
+          border-radius: 30px;
   font-family: Gotham, sans-serif;
-  font-size: 11pt;
-}
+  font-size: 11pt; }
 
 .center {
   text-align: center;
   margin-top: 170px;
-  margin-bottom: 60px;
-}
+  margin-bottom: 60px; }
 
 .footer__delimiter {
   height: 2px;
-  background-color: #dcdcdc;
-}
+  background-color: #dcdcdc; }
 
 .footer__social {
   padding-top: 50px;
   text-align: center;
-  font-family: GothamLight, sans-serif;
-}
+  font-family: GothamLight, sans-serif; }
 
 .footer__social a {
-  color: #a70c5d;
-}
+  color: #a70c5d; }
 
 .footer__callus a {
   text-decoration: none;
-  color: #3f4147;
-}
+  color: #3f4147; }
 
 .wrapper_social {
   width: 230px;
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 .wrapper_social ul {
-  list-style: none;
-}
+  list-style: none; }
 
 .wrapper_social li {
   width: 35px;
@@ -226,77 +186,57 @@ textarea::placeholder {
   text-align: center;
   cursor: pointer;
   -webkit-border-radius: 50%;
-  border-radius: 50%;
+          border-radius: 50%;
   border: 2px solid #D8E2DC;
-  float: left;
-}
+  float: left; }
 
 .wrapper_social .fa {
   color: #D8E2DC;
-  margin-top: 8px;
-}
+  margin-top: 8px; }
 
 .wrapper_social ul li:hover.facebook {
-  border: 2px solid #3b5998;
-}
+  border: 2px solid #3b5998; }
 
 .wrapper_social ul li:hover .fa-facebook {
-  color: #3b5998;
-}
+  color: #3b5998; }
 
 .wrapper_social ul li:hover.twitter {
-  border: 2px solid #00aced;
-}
+  border: 2px solid #00aced; }
 
 .wrapper_social ul li:hover .fa-twitter {
-  color: #00aced;
-}
+  color: #00aced; }
 
 .wrapper_social ul li:hover.google {
-  border: 2px solid #dd4b39;
-}
+  border: 2px solid #dd4b39; }
 
 .wrapper_social ul li:hover .fa-linkedin {
-  color: #dd4b39;
-}
+  color: #dd4b39; }
 
 .bottom_intro {
-  margin-top: 80px;
-}
+  margin-top: 80px; }
 
 @media screen and (max-width: 767px) {
   .center {
-    margin-top: 50px;
-  }
+    margin-top: 50px; }
   .selectric-label {
-    font-size: 12px;
-  }
+    font-size: 12px; }
   .form__wrapper {
-    box-orient: vertical;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    box-pack: center;
     -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
+        -ms-flex-pack: center;
+            justify-content: center; }
   .form__textarea {
     width: 70%;
-    margin: auto;
-  }
+    margin: auto; }
   .form__input {
     width: 70%;
-    margin: auto;
-  }
-}
+    margin: auto; } }
 
 @media screen and (max-width: 992px) {
   .selectric-label {
-    font-size: 12px;
-  }
-}
+    font-size: 12px; } }
