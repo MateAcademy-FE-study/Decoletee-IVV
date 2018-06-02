@@ -1,8 +1,4 @@
 @font-face
-    font-family: 'Gotham'
-    src: url('../fonts/gotham.otf')
-
-@font-face
     font-family: 'GothamRegular'
     src: url('../fonts/gothamregular.ttf')
 
@@ -25,14 +21,9 @@
 
 .services
 	background: #ffffff
-	border-bottom: 2px solid #f4f4f4
-	.services__container
-		padding: 60px 0
-		width: 100%
-		margin: 0
-		border-bottom: 1px solid #f4f4f4
+	border-bottom: 2px solid #f4f4f4	
 	&>header
-		max-width: 1080px
+		width: 100%
 		margin: 0 auto
 		display: -webkit-flex
 		display: -moz-flex
@@ -44,7 +35,9 @@
 		text-align: center
 		flex-direction: column
 		justify-content: center
-	&__title
+		padding: 60px 0
+		border-bottom: 1px solid #f4f4f4
+	&__title--main
 	   margin: 0
 	   text-align: center
 	   font-weight: bold
@@ -62,31 +55,36 @@
 	   	height: 2px
 	   	background: #a70c5d
 	   	margin: 20px auto
-	&__subtitle
+	&__subtitle--main
 		text-align: center
-		margin: 0
-	   	color: #3f4147
-	   	font-family: "GothamRegular"
-	   	font-size: 15px
+		margin: 0px
+		color: #3f4147
+		font-family: "GothamPro"
+		font-size: 15px
 	&__content
-		padding-top: 50px
+		padding: 60px 0 30px 0
 		display: flex
 		align-content: center
 		max-width: 1080px
 		margin: 0 auto
+		&:first-of-type
+			padding-bottom: 50px
+			// border-bottom: 1px dotted black
 	&__block
 		width: 50%
 		&:hover
 			cursor: pointer
-	&__img
-		width: 36px
-		height: 36px
-		float: left
-		&:hover
-			cursor: pointer
-
-.block
-	&__title
+			& .svg__st
+				stroke: #a81060
+				transition: all .5s ease
+			& .services__img--info
+				background-color: #a70c5d
+				fill: #ffffff
+				transition: all .5s ease
+				&.info
+					fill: #ffffff
+					stroke: #FFFFFF
+	&__title--block
 		padding-left: 30px
 		font-family: "Gotham"
 		text-transform: uppercase
@@ -96,22 +94,29 @@
 		width: 70%
 		float: left
 		line-height: 1.333
-	&__info
+		margin: 0
+		display: flex
+		align-items: flex-end
+		min-height: 40px;
+	&__img--service
+		width: 40px
+		height: 40px
+		float: left
+		&:hover
+			cursor: pointer
+	&__subtitle--block
 		display: inline-block
+		padding: 25px 50px 0 66px
+	&__img--info
 		width: 30px
 		height: 30px
 		border: 2px solid #ae206a
 		border-radius: 50%
-		text-align: center
-		font-family: "BanderaPro"
-		margin-left: 20px	
-	&__text
-		padding: 0 0 50px 70px
+		padding: 5px
 		float: left
-		font-family: "GothamLight"
+		margin-right: 20px
 	&__parag
 		list-style: none
-		display: flex
 		line-height: 1.538
 		&:before
 			content: "o"
@@ -120,17 +125,6 @@
 			color: #ae206a
 			font-family: "Gotham"
 
-.services__block:hover
-	& .svg__st
-		stroke: #a81060
-		transition: all .3s ease
-	& .img__info
-		background-color: #a70c5d
-		fill: #ffffff
-		transition: all .3s ease
-		&.info
-			fill: #ffffff
-			stroke: #FFFFFF
 
 .reviews
 	background: #ffffff
@@ -256,14 +250,6 @@
 	padding-left: 10px
 
 .img
-	&__info
-		width: 30px
-		height: 30px
-		border: 2px solid #ae206a
-		border-radius: 50%
-		padding: 5px
-		float: left
-		margin-right: 20px
 	&__quotes
 		width: 20px
 		padding-bottom: 20px
@@ -309,19 +295,19 @@
 	.services__block
 		display: block
 		width: 100%
-	.services__img
+	.services__img--service
 		display: block
 		width: 100%
 		height: 50px
 		margin-bottom: 15px
-	.block__title
+	.services__title--block
 		display: block
 		width: 100%
 		padding: 0
 		text-align: center
 	.block__text
 	.block__parag
-	.img__info
+	.services__img--info
 		display: none
 	.reviews__content
 		flex-direction: column
