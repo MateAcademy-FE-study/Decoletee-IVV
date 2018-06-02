@@ -195,22 +195,34 @@ textarea {
   margin-top: 8px; }
 
 .wrapper_social ul li:hover.facebook {
-  border: 2px solid #3b5998; }
+  border: 2px solid #3b5998;
+  transition: border 0.5s
+}
 
 .wrapper_social ul li:hover .fa-facebook {
-  color: #3b5998; }
+  color: #3b5998;
+  transition: color 0.5s
+}
 
 .wrapper_social ul li:hover.twitter {
-  border: 2px solid #00aced; }
+  border: 2px solid #00aced;
+  transition: border 0.5s
+}
 
 .wrapper_social ul li:hover .fa-twitter {
-  color: #00aced; }
+  color: #00aced;
+  transition: color 0.5s
+}
 
 .wrapper_social ul li:hover.google {
-  border: 2px solid #dd4b39; }
+  border: 2px solid #dd4b39;
+  transition: border 0.5s
+}
 
 .wrapper_social ul li:hover .fa-linkedin {
-  color: #dd4b39; }
+  color: #dd4b39;
+  transition: color 0.5s
+}
 
 .bottom_intro {
   margin-top: 80px; }
