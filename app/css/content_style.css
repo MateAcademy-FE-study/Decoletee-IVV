@@ -161,8 +161,7 @@
       font-family: "Gotham"; }
 
 .reviews {
-  background: #ffffff;
-  border-bottom: 1px solid #f4f4f4; }
+  background: #ffffff; }
   .reviews > header {
     width: 100%;
     margin: 0 auto;
@@ -209,7 +208,11 @@
     text-align: center;
     margin: 0;
     color: #3f4147;
-    font-family: "GothamLight"; }
+    font-family: "GothamPro"; }
+  .reviews__img--quotes {
+    width: 20px;
+    padding-bottom: 20px;
+    stroke: #a70c5d; }
   .reviews__content {
     display: -webkit-flex;
     display: -moz-flex;
@@ -222,14 +225,76 @@
     margin: 0 auto; }
   .reviews__block--text {
     padding-right: 80px; }
+    .reviews__block--text:hover {
+      cursor: pointer; }
+      .reviews__block--text:hover .reviews__author {
+        color: #a70c5d;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
+      .reviews__block--text:hover .quotes {
+        fill: #a70b5d;
+        stroke: #a70b5d;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
+  .reviews__block--video:hover {
+    cursor: pointer; }
+    .reviews__block--video:hover .reviews__author {
+      color: #a70c5d;
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    .reviews__block--video:hover .youtube {
+      fill: #a70c5d;
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
   .reviews__text {
-    font-family: "GothamLight";
+    font-family: "GothamPro";
     margin: 0;
     font-size: 17px;
     line-height: 1.471;
     padding-bottom: 40px; }
+  .reviews__author {
+    font-family: "Gotham\ Bold";
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0;
+    padding: 20px 0; }
+  .reviews__post {
+    float: left;
+    font-size: 14px;
+    font-family: "GothamPro";
+    margin: 0; }
+    .reviews__post:after {
+      content: "•";
+      padding: 0 10px;
+      color: #a70c5d;
+      -webkit-transform: translateX(-10px);
+          -ms-transform: translateX(-10px);
+              transform: translateX(-10px); }
+  .reviews__comp {
+    float: left;
+    text-decoration: none;
+    margin: 0; }
+    .reviews__comp--link {
+      color: #000000;
+      font-weight: bold;
+      -webkit-text-decoration: underline #d8d9d9;
+              text-decoration: underline #d8d9d9;
+      font-family: "Gotham"; }
+      .reviews__comp--link:hover {
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        color: #a70c5d; }
+  .reviews__img--youtube {
+    display: block;
+    margin-bottom: 20px;
+    width: 20px; }
   .reviews__video {
-    height: 200px;
+    height: 212px;
     width: 300px;
     display: block; }
   .reviews__footer {
@@ -252,79 +317,21 @@
     margin: 44px 0; }
     .reviews__footer:hover {
       cursor: pointer; }
-    .reviews__footer:hover .img__reload {
+    .reviews__footer:hover .reviews__img--reload {
       animation: 1s linear 0s normal none infinite running reload;
       -webkit-animation: 1s linear 0s normal none infinite running reload; }
-
-.author__name {
-  font-family: "GothamLight";
-  font-size: 1rem;
-  font-family: "GothamBold";
-  text-decoration: none;
-  margin: 0;
-  padding: 20px 0; }
-
-.author__post {
-  float: left;
-  font-size: 14px;
-  font-family: "GothamLight";
-  margin: 0; }
-  .author__post:after {
-    content: "•";
-    padding: 0 10px;
-    color: #a70c5d;
-    -webkit-transform: translateX(-10px);
-        -ms-transform: translateX(-10px);
-            transform: translateX(-10px); }
-
-.author__comp {
-  float: left;
-  text-decoration: none;
-  margin: 0; }
-  .author__comp--link {
-    color: #000000;
-    font-weight: bold;
-    -webkit-text-decoration: underline #d8d9d9;
-            text-decoration: underline #d8d9d9;
-    font-family: "Gotham"; }
-    .author__comp--link:hover {
-      color: #a70c5d; }
-
-.reviews__block--text:hover {
-  cursor: pointer; }
-  .reviews__block--text:hover .author__name {
-    color: #a70c5d; }
-
-.reviews__block--video:hover {
-  cursor: pointer; }
-  .reviews__block--video:hover .author__name {
-    color: #a70c5d; }
-
-.reload__text {
-  line-height: 60px;
-  text-transform: uppercase;
-  font-family: "Gotham";
-  display: inline-block;
-  font-size: 11px;
-  margin: 0;
-  padding-left: 10px; }
-
-.img__quotes {
-  width: 20px;
-  padding-bottom: 20px;
-  stroke: #a70c5d; }
-
-.img__youtube {
-  display: block;
-  padding-bottom: 20px; }
-
-.img__reload {
-  height: 20px;
-  line-height: 60px;
-  vertical-align: middle; }
-  .img__reload:hover {
-    animation: 1s linear 0s normal none infinite running reload;
-    -webkit-animation: 1s linear 0s normal none infinite running reload; }
+  .reviews__img--reload {
+    height: 20px;
+    line-height: 60px;
+    vertical-align: middle; }
+  .reviews__reload {
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: "Gotham";
+    display: inline-block;
+    font-size: 11px;
+    margin: 0;
+    padding-left: 10px; }
 
 @keyframes reload {
   0% {
@@ -393,34 +400,35 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 80px 50px 0 50px; }
-  .img__quotes {
+    padding: 0px 50px 0 50px; }
+  .reviews__img--quotes {
+    display: block;
     margin: 0 auto;
-    width: 100%;
     height: 50px; }
   .reviews__subtitle {
     padding: 0 20px; }
   .reviews__text {
     text-align: center; }
-  .img__author {
+  .reviews__img--author {
     margin: 0 auto;
     display: block; }
-  .author__name {
+  .reviews__author {
     text-align: center; }
-  .author__post {
+  .reviews__post {
     display: block;
     text-align: center;
     float: none; }
-  .author__post:after {
+  .reviews__post:after {
     content: ""; }
-  .author__comp {
+  .reviews__comp {
     display: block;
     text-align: center;
     float: none;
     margin-bottom: 20px; }
-  .img__youtube {
+  .reviews__img--youtube {
     margin: 0 auto;
-    display: block; }
+    display: block;
+    padding-bottom: 20px; }
   .reviews__video {
     margin: 0 auto; }
   .reviews__block--text {
