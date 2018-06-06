@@ -313,8 +313,8 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    line-height: 60px;
-    margin: 44px 0; }
+    padding: 70px 0 55px 0;
+    border-bottom: 1px solid #f4f4f4; }
     .reviews__footer:hover {
       cursor: pointer; }
     .reviews__footer:hover .reviews__img--reload {
@@ -325,7 +325,6 @@
     line-height: 60px;
     vertical-align: middle; }
   .reviews__reload {
-    line-height: 60px;
     text-transform: uppercase;
     font-family: "Gotham";
     display: inline-block;
