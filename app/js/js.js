@@ -26,8 +26,8 @@ $('.play').addClass('animated rotateInUpRight')
       title: "You successfully contacted us!", 
       text: "Thank you for your feedback", 
       icon: "success",
-      showCancelButton: true,
-      closeOnConfirm: false
+      buttons: true,
+      closeModal: false
     });
   })
 
@@ -35,8 +35,8 @@ $('.play').addClass('animated rotateInUpRight')
     swal({
       title: "You successfully changed language",  
       icon: "success",
-      showCancelButton: true,
-      closeOnConfirm: false
+      buttons: true,
+      closeModal: false
     });
   })
 

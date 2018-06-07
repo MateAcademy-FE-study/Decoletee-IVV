@@ -359,8 +359,7 @@ body {
   .menu__icon {
     display: inline-block;
     z-index: 1001;
-    position: fixed;
-    right: 100px;
+    margin-right: 10px;
   }
   .menu__links {
     position: fixed;
