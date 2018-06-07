@@ -17,7 +17,7 @@ $('#language').selectric({
         nativeOnMobile: false
 });
 $('.form-group .selectric-items').addClass('animated slideInRight');
-$('.play').addClass('animated rotateInUpRight')
+$('.play').addClass('animated bounceInDown')
 
 
 
