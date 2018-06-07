@@ -296,7 +296,7 @@
     width: 20px; }
   .reviews__video {
     height: 212px;
-    width: 300px;
+    width: 100%;
     display: block; }
   .reviews__footer {
     display: -webkit-flex;
