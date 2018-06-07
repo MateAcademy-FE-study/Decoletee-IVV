@@ -11,3 +11,32 @@ $select.selectric({
     disableOnMobile: false,
     nativeOnMobile: false
 });
+
+$('#language').selectric({
+        disableOnMobile: false,
+        nativeOnMobile: false
+});
+$('.form-group .selectric-items').addClass('animated slideInRight');
+$('.play').addClass('animated rotateInUpRight')
+
+
+
+  $('button.form__button').click(function(e){
+    swal({
+      title: "You successfully contacted us!", 
+      text: "Thank you for your feedback", 
+      icon: "success",
+      showCancelButton: true,
+      closeOnConfirm: false
+    });
+  })
+
+  $('.form-group .selectric-items li').click(function(e){
+    swal({
+      title: "You successfully changed language",  
+      icon: "success",
+      showCancelButton: true,
+      closeOnConfirm: false
+    });
+  })
+

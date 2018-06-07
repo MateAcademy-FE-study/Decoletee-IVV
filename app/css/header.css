@@ -79,7 +79,6 @@ body {
   align-content: flex-end;
   flex-direction: row-reverse
 }
-
 .menu__icon {
   display: none;
   width: 45px;
@@ -150,6 +149,7 @@ body {
 
 .nav-dec:hover {
   color: #c51b74 !important;
+  transition: color 0.5s;
 }
 
 .header form {
@@ -172,38 +172,6 @@ body {
   top: 7px;
   position: absolute;
   left: 10px;
-}
-
-.form-group select {
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  border: 2px solid #dddbdb;
-  text-transform: uppercase;
-  color: #a70c5d;
-  font-family: "Gotham\ Bold";
-  padding-left: 27px;
-  width: 65px;
-  padding-right: 0;
-  padding-top: 2px;
-  height: 32px;
-  background: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.form-group select:hover,
-.form-group select:focus {
-  border: 2px solid #a70c5d;
-  outline:none;
-}
-
-.form-group select option {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #808080;
-  padding-left: 20px;
-  outline:none;
 }
 
 .text__container {
@@ -287,7 +255,10 @@ body {
   top: 13px;
   left: 15px;
 }
-
+.btn_price:hover{
+  box-shadow: 0 0 10px #a70c5d;
+  transition: box-shadow 0.5s;
+}
 .play {
   width: 90px;
   height: 90px;
@@ -387,11 +358,13 @@ body {
 @media screen and (max-width: 999px) {
   .menu__icon {
     display: inline-block;
-    margin-right: 20px;
     z-index: 1001;
+    position: fixed;
+    right: 100px;
   }
   .menu__links {
     position: fixed;
+    overflow: hidden;
     display: none;
     top: 0;
     right: 0;

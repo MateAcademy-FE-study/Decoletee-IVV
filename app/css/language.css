@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/gotham.otf");
+  }
+  
+  @font-face {
+    font-family: "Gotham\ Bold";
+    src: url("../fonts/Gotham Bold.otf");
+  }
+  
+  @font-face {
+    font-family: "GothamRegular";
+    src: url("../fonts/gothamregular.ttf");
+  }
+  
+  @font-face {
+    font-family: "GothamLight";
+    src: url("../fonts/githamlight.ttf");
+  }
+  
+  @font-face {
+    font-family: "GothamPro";
+    src: url("../fonts/GothamProRegular.ttf");
+  }
+  
+.form-group .selectric-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:transparent !important; 
+    border: none !important; 
+    border-top-width: 1;
+    z-index: -1;
+    padding: 0;
+}
+.form-group .selectric {
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    border: 2px solid #dddbdb;
+    text-transform: uppercase;
+    color: #a70c5d;
+    font-family: "Gotham\ Bold";
+    padding-left: 27px;
+    width: 65px;
+    padding-right: 0;
+    padding-top: 2px;
+    height: 32px;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .form-group .selectric-label {
+    background: transparent;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: bold;
+    height: 100%;
+    line-height: 25px;
+    z-index: 1;
+    padding-left: 5px;
+    color: #757575;
+}
+.form-group .selectric-items li {
+    display: block;
+    padding: 3px 20px;
+    color: #3c3f46;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline:none;
+    font-weight: 600;
+}
+
+.form-group .selectric-items li::before {
+    content: none
+}
+
+.form-group .selectric:hover,
+.form-group .selectric:focus {
+  border: 2px solid #a70c5d;
+  color: #a70c5d;
+}
+.form-group .selectric-label:hover{
+    color: #a70c5d;
+}
+.form-group .selectric-items li:hover{
+    background-color: transparent;
+    color: #a70c5d;
+}
