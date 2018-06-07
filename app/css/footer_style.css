@@ -146,13 +146,8 @@ textarea {
   -webkit-border-radius: 30px;
           border-radius: 30px;
   font-family: Gotham, sans-serif;
-  font-size: 11pt; 
-}
+  font-size: 11pt; }
 
-.form__button:hover{
-  box-shadow: 0 0 10px #a70c5d;
-  transition: box-shadow 0.5s;
-}
 .center {
   text-align: center;
   margin-top: 170px;
