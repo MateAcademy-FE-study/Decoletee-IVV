@@ -314,6 +314,10 @@ body {
     top: -100px;
     transform: translate(0px, 20%);
   }
+  .posFixed{
+    position: fixed;
+    overflow: hidden;
+  }
   .header nav {
     padding-left: 0;
     margin: 0 auto;
