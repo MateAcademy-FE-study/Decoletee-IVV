@@ -13,17 +13,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-  crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script> -->
-
-
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/language.css">
   <link rel="stylesheet" href="css/selectric.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/content_style.css">
@@ -39,24 +31,7 @@
           <a class="navbar-brand" href="#">
             <img src="img/logo.svg" alt="">
           </a>
-          <!-- <nav class="navbar navbar-expand-lg navbar-light nav_padding">
-            <button class="navbar-toggler nav__btn" type="button" data-toggle="collapse" data-target="#nav_button" aria-controls="nav_button"
-              aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end nav_padding" id="nav_button">
-              <div class="navbar-nav nav__adaptive" id="menu-links">
-                <a class="nav-item nav-link nav-dec" href="#">Услуги и цены
-                  <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-item nav-link nav-dec" href="#">Отзывы</a>
-                <a class="nav-item nav-link nav-dec" href="#">Контакты</a>
-              </div>
-            </div>
-          </nav> -->
-          
-          <div class="menu" style="width: 100%;display:flex;align-content: flex-end; flex-direction: row-reverse">
+          <div class="menu" >
             <div class="menu__icon">
               <span></span>
               <span></span>
@@ -72,19 +47,12 @@
              
             </div>
           </div>
-          <!-- <nav>
-                  <a class="nav-link" href="#">Услуги и цены</a>
-                  <a class="nav-link" href="#">Отзывы</a>
-                  <a class="nav-link" href="#">Контакты</a> 
-              </nav> -->
           <form action="">
             <div class="form-group">
-              <select>
+              <select  name="lenguage" id="language">
                 <option selected>RU</option>
                 <option>EN</option>
                 <option>ES</option>
-                <option>TR</option>
-                <option>CN</option>
               </select>
             </div>
           </form>
@@ -514,7 +482,7 @@
         <!-- <img src="img/reload.svg" alt="reload" class="reviews__img--reload"> -->
         <!-- THIS_IMAGE.SVG -->
         <svg class="reviews__img--reload version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 41 41" style="enable-background:new 0 0 41 41;" xml:space="preserve">
+           viewBox="0 0 41 41" style="enable-background:new 0 0 41 41;" xml:space="preserve">
           <style type="text/css">
             .reload {fill:none;stroke:#a70c5d;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
             .reload-arrow{fill:#a70c5d;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -554,7 +522,7 @@
           <p>ЗАПРОС НА УСЛУГИ</p>
         </div>
         <div class="footer__container">
-          <form>
+          <form onsubmit="return false">
             <div class="form__wrapper">
               <div class="form__input">
                 <div>
@@ -666,6 +634,10 @@
         });
       })(jQuery);
     </script>
+    <script>
+
+    </script>
+
 </body>
 
 </html>
