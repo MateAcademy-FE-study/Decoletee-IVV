@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham.otf"); }
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../fonts/Gotham Bold.otf"); }
+
+@font-face {
+  font-family: "GothamRegular";
+  src: url("../fonts/gothamregular.ttf"); }
+
+@font-face {
+  font-family: "GothamLight";
+  src: url("../fonts/githamlight.ttf"); }
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamProRegular.ttf"); }
+
+.header, .content {
+  background: #f5f5f5; }
+  .header img, .content img {
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+
+.header nav {
+  background-color: #f5f5f5;
+  padding-top: 20px; }
+  .header nav .nav-item {
+    font-size: 15px;
+    font-family: "GothamPro";
+    text-transform: uppercase;
+    color: #292929;
+    padding-right: 2rem !important;
+    font-weight: bolder; }
+    .header nav .nav-item:hover {
+      color: #c51b74 !important;
+      font-weight: bolder; }
+    .header nav .nav-item:last-of-type {
+      margin-right: 8rem; }
+  .header nav form {
+    position: relative; }
+    .header nav form .form-group {
+      margin-bottom: 0;
+      width: 65px;
+      height: 32px; }
+      .header nav form .form-group:after {
+        content: "";
+        display: block;
+        width: 17px;
+        height: 17px;
+        background: #dddbdb;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        top: 9px;
+        position: absolute;
+        left: 10px; }
+      .header nav form .form-group .custom-select {
+        -webkit-border-radius: 30px;
+                border-radius: 30px;
+        border: 2px solid #dddbdb;
+        text-transform: uppercase;
+        color: #a70c5d;
+        font-weight: bold;
+        font-family: "Gotham\ Bold";
+        padding-left: 32px;
+        padding-right: 0;
+        padding-top: 5px;
+        height: 35px;
+        background: none; }
+        .header nav form .form-group .custom-select option {
+          font-size: 12px;
+          text-transform: uppercase;
+          color: #808080;
+          padding-left: 20px; }
+
+.content .content__info h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 80px;
+  color: #454545; }
+  .content .content__info h1:after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #a70c5d;
+    display: block;
+    margin: 30px 0; }
+
+.content .content__info p {
+  font-family: "GothamLight";
+  font-size: 1rem;
+  padding-right: 60px; }
+  .content .content__info p b {
+    font-family: "Gotham"; }
+
+.content .content__info p:last-of-type {
+  margin-top: 40px;
+  margin-bottom: 0; }
+
+.content .content__info button {
+  width: 180px;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  background-color: #a70c5d;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding-left: 15px;
+  font-weight: bold;
+  position: relative; }
+  .content .content__info button:focus, .content .content__info button:active {
+    outline: none !important; }
+  .content .content__info button:after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: url(../img/arrow.png);
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.content .content__person {
+  padding-left: 2em; }
+  .content .content__person:before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    display: block;
+    cursor: pointer;
+    background: #fff;
+    background-image: url("../img/btn-play.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: -60px; }
