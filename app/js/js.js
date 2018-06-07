@@ -40,3 +40,10 @@ $('.play').addClass('animated rotateInUpRight')
     });
   })
 
+var menuButton = document.querySelector('.menu__icon')
+  menuButton.addEventListener("click", function(){
+  var b = document.querySelector('body')
+if( b.style.overflow === "hidden"){
+  b.style.overflow = "visible"
+} else{b.style.overflow = "hidden"}
+})
