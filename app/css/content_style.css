@@ -296,7 +296,7 @@
     width: 20px; }
   .reviews__video {
     height: 212px;
-    width: 100%;
+    width: 300px;
     display: block; }
   .reviews__footer {
     display: -webkit-flex;
@@ -430,6 +430,7 @@
     display: block;
     padding-bottom: 20px; }
   .reviews__video {
+    width: 100%;
     margin: 0 auto; }
   .reviews__block--text {
     padding-right: 0; } }
