@@ -28,7 +28,6 @@ var menuButton = document.querySelector('.menu__icon')
   var b = document.querySelector('body')
   if( b.style.overflow === "hidden"){
     b.style.overflow = "visible";
-
   } else{b.style.overflow = "hidden"}
 })
 
@@ -37,26 +36,29 @@ var menuButton = document.querySelector('.menu__icon')
 
 
 var out = {}
-var arr = document.querySelector('.form__button')
-arr.addEventListener('click', function(e){
+var formButton = document.querySelector('.form__button')
+formButton.addEventListener('click', function(e){
   e.preventDefault();
   var data = $( 'form' ).serializeArray();
   for(var i = 0; i < data.length; i++){
     var record = data[i];
     out[record.name] = record.value;
   }
+  var slider = document.createElement("div");
+  Object.values(out).forEach(function(formValue){
+    var formValueNode = document.createElement('div');
+    formValueNode.innerHTML = formValue;
+    slider.appendChild(formValueNode)
+  })
     swal({
       title: "You successfully contacted us!", 
       icon: "success",
-      elem: out,
+      content: slider,
       buttons: true,
       closeModal: false
     });
 });
 console.log(out)
-
-
-
 
 
 $('.form-group .selectric-items li').click(function(e){
